@@ -1,0 +1,9 @@
+
+name: learn-github-actions
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: bash hello.sh
+

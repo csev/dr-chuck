@@ -5,6 +5,15 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Checkout config scripts
+        uses: actions/checkout@v2
+        with:
+            repository: tsugiproject/tsugi-build
+            path: tsugi-build
+
+      - run: ls tsugi-build
       - run: bash hello.sh
 

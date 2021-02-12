@@ -8,12 +8,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Checkout config scripts
-        uses: actions/checkout@v2
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
         with:
-            repository: tsugiproject/tsugi-build
-            path: tsugi-build
+            php-version: '7.4'
+            extensions: imagick, swoole
+        
+      - run: php -version
 
-      - run: cd tsugi-build; bash ubuntu/build-dev.sh
       - run: bash hello.sh
 

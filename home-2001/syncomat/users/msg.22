@@ -1,0 +1,35 @@
+Sync-O-Matic Newsletter-22
+Fri Apr  7 14:12:29 EDT 2000
+
+Sorry for taking up so much bandwidth.  Version 1.15 is out.  Last night, I got
+the idea that I would see how much of the new Sync-O-Matic 2000 interface I 
+could get to work..  
+
+Verson 1.15 has the Sync-O-Matic 2000 interface under the Test | Sync-2K 
+menu item.  For reasons that are still unknown to me, I made it so 
+that either user interface could be used interchangably.  You can even watch
+the two interfaces using the Test | Dual-Mode option.  Kind of weird.
+
+For people struggling with using Sync-O-Matic 3000, you might just like the 
+new interface a lot.  It tells you what to do at each step - more like 
+a wizard.
+
+Once I rewrote the FTP upload code in Verson 1.14, I completed the last
+"rewrite and make easier" task on my list to port the Sync-O-Matic 2000 
+code back to Sync-O-Matic 3000.
+
+From this point forward, most of my effort will be on the new Sync-O-Matic 
+2000 user interface, focusing on bugs and ease of use, and features.
+
+I have a request as a graphically-challenged engineer-type - I would much
+appreciate it if someone could come up with some graphic elements to make
+the interface look like something other than a Visual Basic programmer 
+nightmare.  The pay is not so great - but think of the pride you would
+get...  The problem is that it is hard to get into writing some documentation
+when the look and feel of the UI is not tied down somewhat.
+
+TTFN.
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/      

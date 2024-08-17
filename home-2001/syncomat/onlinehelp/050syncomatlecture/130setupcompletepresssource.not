@@ -1,0 +1,11 @@
+<!-- file:130setupcompletepresssource-->
+After setup completes, the most important thing is to see the preview video on the left screen.  If the preview video is not there, you may have your camera/capture card installed improperly or have chosen the wrong driver.
+
+Three new buttons are also now available.  These buttons allow you to adjust the video settings, using them you may or may not be able to fix non-working video.
+
+Each of these dialogs is different based on the camera or video capture device.
+
+We will look at each in turn.
+
+To adjust audio, use the volume control icon in the system tray.  See the
+<a href=../030installrealproducer/index.htm>Installing and Testing RealProducer</a> documentation for details on properly setting the audio levels.

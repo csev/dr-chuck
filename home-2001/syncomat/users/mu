@@ -1,0 +1,12 @@
+#! /bin/csh
+
+if ( $#argv < 1 ) then
+  echo Please specify a file name
+  exit
+endif
+
+set list=`awk -F: '{print $1}' < list`
+
+foreach i ( $list ) 
+  echo /usr/um/bin/mail -s \"Sync-O-Matic Newsletter\" $i '<' $1
+end

@@ -1,0 +1,217 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Importing ClipBoard-2000 Lectures into Sync-O-Matic-2000</h3>
+One of the ultimate goals is to work towards a web-lecture interchange format which is a standard.  With a standard, lectures could be moved from one publishing environment to another.  As an exercise in this effort, Sync-O-Matic is capable of importing lectures from
+<a href=http://www-personal.umich.edu/~csev/projects/ck2k/>ClipBoard-2000</a>.
+<p>
+ClipBoard-2000 is a Quicktime based system which records its media in Quicktime and
+produces Quicktime based lectures for web-delivery.  RealProducer is capable of
+encoding from Quicktime into Real, so it is possible that these lectures can be
+imported into Sync-O-Matic for publishing.
+<p>
+Sync-O-Matic and ClipBoard use the same format for image files and recording the timings of when each image file is to be shown within a lecture so the only problem is to convert the Quicktime file (rawmedia.mov) into a Real file (rawmedia.rm).
+<p>
+This conversion facility is built-into Sync-O-Matic, but unfortunately the Windows RealProducer cannot read very many different Quicktime formats.  Fortunately, the RealProducer on the Macintosh can handle the files just fine.  This is interesting because the Quicktime player on Windows is quite capable of playing the Quicktime files under Windows.
+<p>
+Before you start, it is important to make sure that you have the latest version of Quicktime and RealProducer installed both on the PC and Macintosh systems you will be using.
+<BR CLEAR=ALL><HR>
+<A NAME=010imgfiles> </a>
+<A HREF=010imgfiles.htm>
+<IMG SRC=010imgfiles.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010imgfiles-->
+Starting on the Macintosh, we have the four image files exported from Office-98 PowerPoint on the Macintosh.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020choosedir> </a>
+<A HREF=020choosedir.htm>
+<IMG SRC=020choosedir.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020choosedir-->
+When we start ClipBoard, first we select the appropriate directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030lecturing> </a>
+<A HREF=030lecturing.htm>
+<IMG SRC=030lecturing.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030lecturing-->
+Press the <b>Record</b> button and off we go using ClipBoard-2000 to record the lecture.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040dirafter> </a>
+<A HREF=040dirafter.htm>
+<IMG SRC=040dirafter.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040dirafter-->
+This shows the contents of the directory after the lecture has been recorded.  The files of interest are the image files, the <b>images.txt</b>, and the <b>rawmedia.mov</b> files.
+<p>
+The other files describe the scribbling, typing, and pointing that ClipBoard-2000 supports through Quicktime they are not used by Sync-O-Matic (at least so far).
+<p>
+We use some file transfer to move the files to the PC.  This can be FTP or some shared directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050startsyncomatdoopen> </a>
+<A HREF=050startsyncomatdoopen.htm>
+<IMG SRC=050startsyncomatdoopen.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050startsyncomatdoopen-->
+On the PC, start Sync-O-Matic go to <b>Options | More Detail</b> and <b>Open</b> a lecture.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060selecttransferreddir> </a>
+<A HREF=060selecttransferreddir.htm>
+<IMG SRC=060selecttransferreddir.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060selecttransferreddir-->
+Navigate to the directory which has been transferred from the Macintosh.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070importclipboard> </a>
+<A HREF=070importclipboard.htm>
+<IMG SRC=070importclipboard.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070importclipboard-->
+All of the image and event files (<b>images.txt</b>) are already compatible with Sync-O-Matic, so the only remaining task is to convert the Quicktime media to Real Media.  ClipBoard names its media <b>rawmedia.mov</b> and Sync-O-Matic names its media <b>rawmedia.rm</b>.
+<P>
+To convert media, execute <b> Execute | Import ClipBoard</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100encodingpressstart> </a>
+<A HREF=100encodingpressstart.htm>
+<IMG SRC=100encodingpressstart.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100encodingpressstart-->
+Sync-O-Matic detects the presence of the <b>rawmedia.mov</b> file without a <b>rawmedia.rm</b> file so it decides to let us encode the file using RealEncoder.  Press <b>Start</b> to begin the encoding process.  The progress bar at the bottom of the screen indicates how much work remains to be done.
+<p>
+Sadly, this is where the Windows RealProducer often fails to be able to encode many of the Quicktime media types.  Sometimes RealProducer even hangs completely at this point.
+<p>
+If you experience strange problems, first try to encode manually using the RealProducer from the <b>rawmedia.mov</b> to the <b>rawmedia.rm</b>.  Usually if the Sync-O-Matic encode fails the manual encode will fail in the same way.
+<p>
+The typical solution is to use RealProducer on the Macintosh which is capable of handling all types of Macintosh Quicktime files.  We will see an example of this in a moment.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110badformat> </a>
+<A HREF=110badformat.htm>
+<IMG SRC=110badformat.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110badformat-->
+Sometimes, instead of hanging, the RealProducer may complain with a message similar to this.  Again, the solution typically is to switch to the Macintosh RealProducer.
+<P>
+If the encode is successful (no error messages), the next step is to publish the lecture normally.  But for now, we assume the worst case and jump back to the Macintosh
+to use RealProducer.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150rpstarted> </a>
+<A HREF=150rpstarted.htm>
+<IMG SRC=150rpstarted.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150rpstarted-->
+Now we start RealProducer on the Macintosh.  First you use <b> File | Open File</b> to
+select the Quicktime file.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160selectfile> </a>
+<A HREF=160selectfile.htm>
+<IMG SRC=160selectfile.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160selectfile-->
+Choose the <b>rawmedia.mov</b> file from the ClipBoard directory.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170encoding> </a>
+<A HREF=170encoding.htm>
+<IMG SRC=170encoding.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170encoding-->
+Encoding will take a while as the progress bar moves to indicate the amount of remaining work.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180saveasrawmediarm> </a>
+<A HREF=180saveasrawmediarm.htm>
+<IMG SRC=180saveasrawmediarm.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:180saveasrawmediarm-->
+Save the resulting file as <b>rawmedia.rm</b>. Conveniently, this is the default name.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=190dirwithrawmediarm> </a>
+<A HREF=190dirwithrawmediarm.htm>
+<IMG SRC=190dirwithrawmediarm.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:190dirwithrawmediarm-->
+Once the whole directory is transferred to the PC,
+there are <b>rawmedia.mov</b> and <b>rawmedia.rm</b> files.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200againreadytopublish> </a>
+<A HREF=200againreadytopublish.htm>
+<IMG SRC=200againreadytopublish.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:200againreadytopublish-->
+Start Sync-O-Matic and after you have opened the proper lecture, you will notice that the publish button is enabled because the <b>rawmedia.rm</b> file exists - go ahead and publish the lecture normally.
+<P>
+The lecture can be published from either the <b>Less Detail</b> or <b>More Detail</b> screens in Sync-O-Matic.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220processalldone> </a>
+<A HREF=220processalldone.htm>
+<IMG SRC=220processalldone.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:220processalldone-->
+The rest of the publishing process occurs normally.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230viewinglecture> </a>
+<A HREF=230viewinglecture.htm>
+<IMG SRC=230viewinglecture.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:230viewinglecture-->
+Press the <b>Test</b> button to see the Sync-O-Matic (Real) version of the same lecture recorded using ClipBoard-2000.
+<BR CLEAR=ALL>
+This has shown how to take a ClipBoard-2000 lecture and convert it to a Sync-O-Matic lecture.
+<p>
+The wrinkle in the process is the fact that the Conversion from Quicktime to Real may have to be done on the Macintosh before the files are transferred to the Windows system.  While this documentation showed the attempt to use RealProducer on the PC before converting the files on the Mac, your typical process will simply convert the files on the Macintosh.
+<p>
+With this feature, you can produce both a Quicktime and Sync-O-Matic version of a lecture, giving your viewers maximum flexibility.  Some day, with a single recording, you will be able to give your viewers a web-lecture in nearly any format they are capable of handling.  For that to happen, each of the different publishing tools must accept a standard "lecture object" and automatically publish this object using server based techniques.
+<p>
+Ah, but that is the future.  For now, we do the best we can.
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 2000, Computer Resource Services -->

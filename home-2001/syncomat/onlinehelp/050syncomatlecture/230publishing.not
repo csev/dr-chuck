@@ -1,0 +1,6 @@
+<!-- file:230publishing-->
+The publishing process will take some time, depending on the amount of slides, audio, and video in the lecture.
+
+The publishing process will update the status bar at the bottom of the screen as it progresses.  This process may raise error dialogs or other dialogs as it processes the data.
+
+When things have completed successfully, the status window says "All Done".

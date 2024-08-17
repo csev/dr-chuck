@@ -1,0 +1,72 @@
+<h1>Changes in This version</h1>
+Sync-O-Matic 2000 Version Beta-5 
+<p>
+This version follows close on the heels of Beta-4 so you should check there for new features too.
+<p>
+The major addition in this version is the fact that Sync-O-Matic can be "automated"
+using Visual Basic.  Sync-O-Matic is an "ActiveX Exe"  This means that when you execute 
+it normally it operates the same as before.
+<p>
+However when you add a reference to the .exe file to a VB project, you have access to a API 
+which allows you to control Sync-O-Matic directly.  
+<p>
+Here is some simple code:
+<pre>
+    Dim Bob As New syncomatic
+    Dim QuitMsg As String
+    Dim Tmp As String
+   
+    Bob.SetTextPP txtPP.Text ' Sets default values for lots of the directories
+    
+    ' Now we will override some of those
+    
+    Bob.SetTextWebDir txtWebDir.Text
+    Bob.SetOptCD False
+    Bob.SetOptWeb True
+    Bob.SetOptStream False
+    Bob.SetTextWebURL txtWebURL.Text
+    MsgBox "Yo" ' Pause for a moment so the user can play with Sync-O-Matic
+    If Not Bob.OKToPublish(QuitMsg) Then
+        MsgBox "Cannot publish - " & QuitMsg
+        Exit Sub
+    End If
+    
+    ' This will actually block while the non-batchfile stuff
+    ' is executed - this can take from 10 to 60 seconds to complete
+    
+    If Not Bob.Publish(QuitMsg) Then
+        MsgBox "Publish aborted - " & QuitMsg
+        Exit Sub
+    End If
+
+    ' The "lazy" way to go
+    ' Bob.WaitUntilComplete
+    
+    ' The more "interactive approach"
+    ' This will loop waiting for the batch file to complete
+    ' When the RealProducer ActiveX control is used this will be about a second
+    ' When RealProducer 5 is used this may be a minute or so
+    
+    While Bob.IsRunning()
+        Bob.GetStatus (Tmp)
+        lblStatus.Caption = Tmp
+        DoEvents ' make sure to add this
+    Wend
+</pre>
+<p>
+The source for this entire application is available at 
+<a href="http://www.netfact.com/syncomat/source/syncauto.zip">
+http://www.netfact.com/syncomat/source/syncauto.zip</a>.
+<p>
+This has a number of applications - You can write your own "Server Mode" of Sync-O-Matic,
+developing your own conventions for file storage, etc.  Another thing you could do is look through
+a directory of unpublished lectures, checking the relative dates of files (like make on UNIX) and
+publishing directories which have been updated...
+<p>
+At the end of the day, you could just want to put your own UI on Sync-O-Matic.
+<p>
+This is a new feature so there may be some things that you would
+<p>
+/Chuck
+<p>
+Jan 5, 2000

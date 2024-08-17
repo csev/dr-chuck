@@ -1,0 +1,171 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Sync-O-Matic 2000 Documentation</h3>
+This section describes some features of Sync-O-Matic 2000 which were not covered in the previous section.
+<p>
+<BR CLEAR=ALL><HR>
+<A NAME=010filemenu> </a>
+<A HREF=010filemenu.htm>
+<IMG SRC=010filemenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010filemenu-->
+The <b>File</b> menu allows you to select an existing lecture, create a new lecture or exit the program.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020optionsmenu> </a>
+<A HREF=020optionsmenu.htm>
+<IMG SRC=020optionsmenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020optionsmenu-->
+There are three selections in the <b>Options</b> menu.
+<P>
+<b>More Detail</b> Changes to a mode designed for advanced uses of Sync-O-Matic.  This interface is described in a
+<a href=../110moredetail/index.htm>separate section</a>.
+<P>
+<P>
+<b>Liberal Slide Names</b> Allows the use of GIF/JPG images with any naming convention rather than the naming convention used by PowerPoint.  Using this feature allows one to make lectures without using PowerPoint at all.  This capability is documented in more detail
+<a href=../070imagesnoppt/index.htm>in a separate chapter</a>.
+<P>
+<b>Preferences</b> allows the user to setup various defaults and configuration options.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030prefsmain> </a>
+<A HREF=030prefsmain.htm>
+<IMG SRC=030prefsmain.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030prefsmain-->
+The preferences are divided into sections.  This is the <b>Main Settings</b> screen.
+<P>
+The most recent lecture is stored in the preferences.
+<P>
+The paths for the hard disk and web publish steps can be configured.  The strings <b>${lecname}</b>, <b>${lecparent}</b>, and <b>${lecdir}</b> can be used to put the current lecture name and directory into these strings.
+<P>
+The goal of these preferences and replacement strings in the preferences is for you to be able to configure your naming convention any way you like.  For example, if you had the web space mounted on a drive, you might want to make the web publish directory to be something like <b>H:\mount1\crs\lectures\${lecname}\</b> or something similar.
+<br clear=all>
+<P>
+The following is an example:
+<P>
+<pre>
+String          Value
+------          ------
+${lecdir}       C:\My Documents\lectures\test\
+${lecparent}    C:\My Documents\lectures\
+${lecname}      test
+</pre>
+<P>
+The default style path is also put in here.
+<P>
+The default web location for lectures is also set here.
+<P>
+In general, leave the preferences set to their default values on this screen unless you have a good reason to change them.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040prefsupload> </a>
+<A HREF=040prefsupload.htm>
+<IMG SRC=040prefsupload.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040prefsupload-->
+This screen allows you to set the default host name and account for the FTP upload to the Web and repository.
+<P>
+As noted, if you leave the host name for standard FTP uploads blank, Sync-O-Mat will parse the URL for the FTP host name.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=041prefsregistration> </a>
+<A HREF=041prefsregistration.htm>
+<IMG SRC=041prefsregistration.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:041prefsregistration-->
+Registration is a good thing.  While Sync-O-Matic is shareware, it is good to be notified of new versions of the product.  Sync-O-Matic does not have any code which contacts Sync-O-Matic Central notifying you of new versions.  The good news is that once it is installed you don't get bugged all the time.  The bad news is without registration, you will never know when a new version comes out.
+<P>
+Also, when people register, it lets the authors know that people care about the product.  While money is always the best way to show that you care, registration is better than nothing.  If the product is not used at all, then development will probably drop off to a crawl.
+<P>
+The fields are pretty self-explanatory.  As you type in the registration code you get immediate feedback when a valid code has been entered.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=042prefscompatibility> </a>
+<A HREF=042prefscompatibility.htm>
+<IMG SRC=042prefscompatibility.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:042prefscompatibility-->
+Generally, this screen should be left to default values.
+<P>
+By default, Sync-O-Matic uses the RealProducer ActiveX control to record, examine, and edit RealMedia (.rm) files as necessary.  This requires RealProducer 7.0 or later to be installed.  This works very conveniently under typical situations.
+<P>
+Two situations arise where you might not want to use the defaults.  If for some strange reason the RealProducer ActiveX control is having problems, the lecture publishing process can be done using explicit calls to Real command line utilities.
+<P>
+The second scenario is when you want to produce media that can be played on earlier versions of RealPlayer.  Sync-O-Matic supports using media as far back as RealAudio 2.0 (before RealVideo even existed).  Typically the farthest people go back is version 5.0 to insure the broadest player capability.
+<P>
+Unfortunately, it seems as though small improvements to RealProducer cause slight changes to media formats which causes client players to continuously try to upgrade themselves.  In some enterprise-wide solutions, end-users cannot even upgrade their Players, rendering the media unviewable.
+<P>
+In these situations, we recommend sticking with RealProducer 5.0 - sometimes you can download the older versions from the Real site.  If you have specific problems with this, contact Sync-O-Matic technical support.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=043prefsadvanced> </a>
+<A HREF=043prefsadvanced.htm>
+<IMG SRC=043prefsadvanced.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:043prefsadvanced-->
+This screen allows you to configure the behavior of the
+<b>More Details</b> (aka PowerUser interface) for Sync-O-Matic.  This interface
+is similar to the original Sync-O-Matic user interface.  The interface is a little busy, but is preferred by users with more experience.
+<P>
+You can indicate that you want the advanced interface to be the default interface.
+<P>
+Also, you can configure the naming convention for the additional fields which appear in the advanced mode.
+<P>
+The advanced mode screen is described in more detail
+<a href=../110moredetail/index.htm>in a separate chapter</a>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=045executemenu> </a>
+<A HREF=045executemenu.htm>
+<IMG SRC=045executemenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:045executemenu-->
+The <b>Execute</b> menu contains all of the operations supported by the buttons on the main form.  These menu options are enabled and disabled as Syncomat goes through its various processing steps.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060readytouploadrep> </a>
+<A HREF=060readytouploadrep.htm>
+<IMG SRC=060readytouploadrep.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060readytouploadrep-->
+Once a lecture has been recorded, you can either publish it to the hard disk or to the web.
+<P>
+Another option is to upload the raw materials necessary to publish the lecture to some type of repository.
+<P>
+In some ultimate future, repositories will exist which can automatically "publish" Sync-O-Matic lectures, but in the short term, typically some human "Lecture-master" will be doing the publish process for these lectures uploaded to a "repository".
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070uploadrepos> </a>
+<A HREF=070uploadrepos.htm>
+<IMG SRC=070uploadrepos.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070uploadrepos-->
+The process to upload to a repository is very similar to the process to upload a published lecture to the web.
+<BR CLEAR=ALL>
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 2000, Computer Resource Services -->

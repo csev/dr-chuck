@@ -1,0 +1,6 @@
+This gives a brief overview of how you can work with the Sync-O-Matic files directly.  Many
+users get to the point where they manage the files in these directories directly, bypassing all of the slick Sync-O-Matic processes.  When they have things all set, they start Sync-O-Matic and simply press <b>Publish Lecture</b>.
+<p>
+One of the advantages of Sync-O-Matic when compared to other web-lecture systems is that
+nearly all of its operation can be examined and done manually.  The whole design is set
+up to give users both convenience and flexibility.

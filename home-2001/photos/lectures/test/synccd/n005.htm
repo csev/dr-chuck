@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<title>Online Lecture </title>
+</HEAD>
+<BODY bgcolor="#EEEEEE">
+<CENTER>
+<IMG SRC=inst160.gif BORDER=0> <BR>
+<OBJECT ID=IEImageWindow
+ CLASSID="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA" WIDTH=160 HEIGHT=30>
+ <PARAM NAME="src" VALUE="r005.rpm">
+ <param name="autostart" value="TRUE">
+ <param name="autogotourl" value="true">
+ <param name="console" value="SMURFY">
+ <param name="controls" value="ControlPanel">
+<EMBED SRC=r005.rpm HEIGHT=30 WIDTH=160 controls=ControlPanel
+        CONSOLE=SMURFY AUTOGOTOURL=TRUE AUTOSTART=TRUE         
+	type="audio/x-pn-realaudio-plugin"
+        NAME=SyncControlPanel>
+</OBJECT>
+<BR>
+<font size=-1>
+<FORM>
+<SELECT NAME="URL" SIZE=1
+onChange="window.location=this.options[this.selectedIndex].value;this.selectedIndex=0;">
+<Option Value="">Audio Index
+<OPTION Value="n001.htm">Cool things to say
+<OPTION Value="n002.htm">				Stop light Stupidity
+<OPTION Value="n003.htm">Jealous attacks again
+<OPTION Value="n004.htm">Trouble brewing
+<OPTION Value="n005.htm">Friendless Friends
+<OPTION Value="n006.htm">Weird Acts
+</SELECT>
+<BR>
+<SELECT NAME="REPOSITION" SIZE=1 onChange="parent.slide.window.location=this.options[this.selectedIndex].value;this.selectedIndex=0;">
+<Option Value="">Slide Index
+<OPTION Value="sld001.htm">Cool things to say
+<OPTION Value="sld002.htm">				Stop light Stupidity
+<OPTION Value="sld003.htm">Jealous attacks again
+<OPTION Value="sld004.htm">Trouble brewing
+<OPTION Value="sld005.htm">Friendless Friends
+<OPTION Value="sld006.htm">Weird Acts
+</SELECT>
+<BR>
+<INPUT TYPE="Button"  Value="Thumbnails"
+      onClick="parent.slide.window.location='thumb.htm';"> <BR>
+<INPUT TYPE="Button"  Value="Problems"
+      onClick="parent.slide.window.location='problems.htm';"> <BR>
+<BR>
+You may have to press <a href=n005.htm>play</a> to start the lecture. <br>
+</FORM>
+</Font>
+</BODY>
+</HTML>

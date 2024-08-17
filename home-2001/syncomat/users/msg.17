@@ -1,0 +1,87 @@
+Sync-O-Matic 3000 Newsletter: Number 17
+Fri Mar 10 09:08:58 EST 2000
+
+It has been seven (7) months since I have sent out a Sync-O-Matic users 
+message (how is that for NOT wasting your time).  A lot has happened with
+my new project ClipBoard and things are starting to happen again on 
+Sync-O-Matic.    So I thought I would let folks know what is up and what 
+is in the future plans.
+
+I have been pretty much heads-down working on my Mac-based product called
+ClipBoard-2000 - this has turned out to be quite a cute little program.
+Unlike Sync-O-Matic-3000 it is easy to intstall, setup and get working.
+If you have access to a Macintosh I highly recommend that you download it
+and play with it.  The site for it is 
+
+http://www-personal.umich.edu/~csev/projects/cb2k/
+
+On the Sync-O-Matic side, now that I have ClipBoard under control, I am off 
+on a number of tangents.  
+
+I am working on a completely new Sync-O-Matic (I call it Sync-O-Matic-2000)
+with a focus on ease of installation and use.  You should be able to produce
+a lecture with very few mouse clicks.  I have a prototype of this working with
+the following features: (1) Automatic import from PowerPoint (no more Save As
+HTML), (2) RealProducer is built-in to Sync-O-Matic - you do not have to 
+separately install RealProducer, (3) Sync-O-Matic directly controls the 
+RealProducer (no more cryptic dialog boxes), and (4) simplified Make Lecture
+and improved lecture Upload.  I also have a bunch of features in mind that
+I will tell you about later when I get them working.  For existing users of
+Symc-O-Matic 3000, the new product may seem somewhat less powerful and 
+flexible - but it will be MUCH easier to use.
+
+As I develop new technology for Sync-O-Matic 2000, I am back-porting some of it
+to Sync-O-Matic-3000.  I intend to release a version 1.12 of Sync-O-Matic 3000
+which looks a lot like the existing sync-o-matic but with some 
+improvements including: (1) The ability to import a ClipBoard recorded lecture
+and publish as a Sync-O-Mat lecture and (2) Build in RealProducer and others.
+
+Another plan that I have in mind is to create a "server-edition" of
+Sync-O-Matic 2000.   With this, you will be able to upload Sync-O-Matic
+Lecture materials (PPT, Timing, and media) to an NT server with IIS, ASP, 
+and Sync-O-Matic Server edition, and Sync-O-Matic Server Edition will do the
+publishing of the lecture (in as many different styles as you like) dynamically
+on the fly :).  This will revolutionize our ability to archive, move, and reuse
+content and improve overall usability for lecture creators.
+
+In terms of documentation and support effort, I do not plan to update 
+the documentation of Sync-O-Matic-3000 at all. As such, when I release version
+1.12 the new features will be undocumented (unless I add stuff to a FAQ).
+Version 1.12 is intended for existing users and those users who want to 
+integrate ClipBoard and Sync-O-Matic.  But because it will work so much better
+than Version 1.11 in some areas, the fact that the documentation will be
+out-of-date is somewhat mute..
+
+Sync-O-Matic 2000 will be documented thoroughly as part of that project.  
+Because this new release is simpler and cleaner, writing good documentation 
+will not be such a chore.
+
+As this unfolds, I will be making announcements to the list.  Once I 
+have version 1.12 of Sync-O-Matic 3000 released, I will spend some time
+working on the design of Sync-O-Matic 2000 - as part of that, I will be asking
+the existing users of Sync-O-Matic what they like and dislike about the 
+product.  I think that I have a pretty good idea as to where the big strengths
+and weaknesses are (being the one-man tech support crew all these years), but
+there may be subtle things that I can quickly fix in the new version.  I will
+be releasing Alpha releases of Sync-O-Matic 2000 and I encourage you to 
+download these and give me your feedback.
+
+I look forward to these next few months and finally getting to do a decent job
+on Sync-O-Matic.  I would like to thank you for giving Sync-O-Matic a try, and
+if you were disappointed in how difficult it was to use, the time is coming 
+soon that you should give it another try (Don't bother with version 1.12 - it
+won't be THAT much better).
+
+When released, Sync-O-Matic 2000 will continue to be available at no 
+cost and no restrictions on the materials produced by Sync-O-Matic 
+(commercial or educational).  I may come up with some way to sell a 
+CD and printed documentation or make money on support, but the software
+will continue to be free.  Over the years, I have just found over and
+over that the best things in life (and the best quality software) are 
+free.
+
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/
+

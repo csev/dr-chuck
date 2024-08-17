@@ -1,0 +1,7 @@
+<!-- file:250presspubweb-->
+Once the testing is complete, you can press the <b>Publish to the Web</b> button.
+
+<i>
+Note:
+For a number of technical details, the same files cannot be used on the local disk and the web.  The files in <b>synccd</b> will only play off the local disk - if they are uploaded to a web server, they will not work.
+</i>

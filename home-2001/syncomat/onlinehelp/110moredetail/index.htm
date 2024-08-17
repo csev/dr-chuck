@@ -1,0 +1,296 @@
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Using the Sync-O-Matic 2000 Power User Interface</h3>
+<p>
+This is the power user mode of Sync-O-Matic. It exposes more of the capability of Sync-O-Matic and allows you to view more of the information used by Sync-O-Matic while making and publishing lectures.   This mode is used once someone gets used to how the data is laid out on disk and once the bugs are worked out of their production process.
+<P>
+It is possible under Preferences to indicate that this mode is to be the default mode on startup.
+<BR CLEAR=ALL><HR>
+<A NAME=010moredetail> </a>
+<A HREF=010moredetail.htm>
+<IMG SRC=010moredetail.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:010moredetail-->
+The screen is divided into five basic areas.  At the top is the status information and current lecture directory.  The lecture directory can be changed by using <b>File | Open</b> or the <b>Browse</b> button by the <b>PowerPoint Output</b> directory.
+<P>
+The <b>Status</b> area is used for status during Sync-O-Matic execution and error messages.
+<P>
+Pressing the icon on the right is the same as pressing the <b>Publish</b> button.
+<P>
+The second area shows the input material for Sync-O-Matic.  The <b>PowerPoint Output</b> directory contains the slides and images. The <b>Media Directory</b> contains the media files (*.rm) and events files (*.txt).  Normally, these two directories are the same.  To be compatible with earlier versions of Sync-O-Matic, you can separate these materials.
+<P>
+The <b>Copy Materials</b> points to a directory of information which is copied into the destination directory after the lecture publication is complete.  Generally this directory is empty or does not exist.
+<P>
+The third area allows you to select different styles for lecture publication.  Sync-O-Matic has a very flexible mechanism which allows you control how your media is presented.  Style files are documented in some detail in a
+<a href=../080stylefiles/index.htm>separate chapter</a>.
+<P>
+The fourth area is used to produce a lecture playable from Disk or a CD-ROM.  You can specify an output directory to hold the materials.  You can also publish the materials and test them with the buttons provided.
+<P>
+In the bottom area, we can see the web publish section.  You can specify the output directory, ultimate web URL, and optionally the streaming base URL.  Because of limitations of the interaction between Real and the browser, it is necessary that lectures be published with the ultimate destination URL completely specified.
+<P>
+There is a check box to indicate whether you will be storing the materials on a streaming server.
+<P>
+Buttons allow you to publish, upload, and test the web-lecture.  To test a web lecture, it <i>must</i> be uploaded - the materials will not work played off the local disk.
+<P>
+<b>Usage Notes</b>
+<P>
+It is possible to publish <i>both</i> the Hard/Disk and Web versions at the same time.  This is done by checking both check boxes and pressing any <b>Publish</b> button or
+<b>Execute | Make Lecture</b>.
+<P>
+Also, note that when you change the lecture directory, the preferences are used to fill in the remaining fields.  Once the lecture directory is set, you can manually change any of the fields to any value you like.  But if you change the lecture directory, the preferences will be reapplied.
+<P>
+All of the publish buttons do the same thing as </b>Execute | Make Lecture</b> so if you check both the box for Disk and Web and press the <b>Publish</b> button in the disk area, both the disk version <i>and</i> the web version will be published.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020optionsmenu> </a>
+<A HREF=020optionsmenu.htm>
+<IMG SRC=020optionsmenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:020optionsmenu-->
+The <b>Options Menu</b> is a mirror image of the same menu in the <b>Less Details</b> screen.
+<P>
+The
+<a href=../050syncomatlecture/index.htm>Less Detail</a> interface is described in a separate section.
+<P>
+<a href=../070imagesnoppt/index.htm>Liberal Slidenames</a> is described in a separate section.
+<P>
+<a href=../060syncomatref/index.htm>Preferences</a> are described in a separate section.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030executemenu> </a>
+<A HREF=030executemenu.htm>
+<IMG SRC=030executemenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:030executemenu-->
+The <b>Execute</b> menu has a number of options.
+<P>
+<b>Import PowerPoint</b> allows you to search for and import the slides from a
+PowerPoint file (*.ppt) into the Lecture Directory.
+<P>
+<b>Import ClipBoard</b> allows you to automatically convert Quicktime media coming from the ClipBoard-2000 application.  This feature is documented in a
+<a href=../100clipboard/index.htm> separate section</a>.
+<P>
+<b>Record Lecture</b> walks you through the process of recording the lecture and timing the slides.  This operates the same as in the Less Detail mode.
+<P>
+<b>FlipIT!</b> is a much more sophisticated interface to the lecture recording process.  Using FlipIT, you have much more control how slides are presented, whether media is recorded or played, and supports multi-part lectures.  The most common reason that people use FlipIT! is to time slides while playing pre-recorded media.  Multi-part lectures are somewhat complex to use.  FlipIT is documented later in this section.
+<P>
+<b>TimeIT!</b> is tool to edit event files.  TimeIT also allows you to create event files from hand-timed material.  It operates like a spreadsheet specifically designed for timings.  TimeIT! does not work with timing information from ClipBoard or the Liberal Slide Names lectures.  TimeIT is documented later in this section.
+<P>
+<b>Make Lecture</b> triggers the publishing process.  It is the same as pushing any of the (3) Publish buttons.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040testmenu> </a>
+<A HREF=040testmenu.htm>
+<IMG SRC=040testmenu.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:040testmenu-->
+This testing menu allows you to use/test several important components of Sync-O-Matic separately.
+<P>
+Sync-O-Matic uses ActiveX to operate RealPlayer, RealProducer (Live and off-line encoding), and PowerPoint.
+<P>
+If you are having troubles with Sync-O-Matic's interaction with any of these components you can use these test modes to see if the basic functionality and communication between Sync-O-Matic and these components is working.
+<P>
+Using these can be quite helpful when communicating with Sync-O-Matic support.  It is quite helpful if you can say something like, "I tested PowerPoint in test-mode and was able to do all of the functions just fine."
+<P>
+Someday these functions might be removed from a future version of Sync-O-Matic - but given the challenges communicating with these components as new versions of the components are released, the menu will probably never be removed :).
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050flipit> </a>
+<A HREF=050flipit.htm>
+<IMG SRC=050flipit.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:050flipit-->
+This screen is when FlipIT has been executed on a directory which already contains a lecture.  All of the yellow is indicating areas of concern.
+<P>
+At the top there is a status area.  It is currently concerned that there is already an events file in this directory.
+<P>
+The next area is the <b>Events File</b> - this is a small text file which contains timing information indicating what time each slide is to be displayed while the media is played.  The <b>Delete</b> button removes this file.  This is yellow because if we are recording a new lecture, this file should not exist.  So for this example, we delete the file and the field becomes white and the status is updated.
+<P>
+The following area is the <b>Media File</b> - it is also yellow because the file exists and the current settings at the bottom of the screen indicate that we will be recording new media.
+<P>
+The <b>Starting Slide</b> allows you to start somewhere other than the first slide in the sequence.  Typically this is left at one.
+<P>
+The <b>Start-Up Delay</b> is a value (in seconds).  This is used to add a delay from the time the <b>+</b> is pressed until the timer is actually started.  This is typically used when the RealProducer takes 3-4 seconds from the time it is started until it actually starts recording.  The default is zero seconds indicating that the timer is started immediately when the <b>+</b> key is pressed.  If the delay is wrong, a few seconds can be trimmed from or added to each time using TimeIT!.
+<P>
+You can display slides in a full-screen, small, window or not at all based on the radio buttons in the <b>Slide Display Style</b> area.
+<P>
+You can record new media, play existing media (must be the file name in <b>Media File</b>), or do no media.  The <b>No Media</b> option is provided to allow you to synchronize to any source such as the Quicktime player, a video tape, or a live performance where the encoding is done on another computer.  For this example, we already have the media so we select <b>Play Media</b>.  At that point, all the fields will be white.
+<P>
+<b>Multi-Part Lectures</b>
+<P>
+You can record multi-part lectures using Sync-O-Matic.  In a multipart lecture, you have one sequence of slides, but several different media files.  For example a 30 slide presentation might be in three files with slides 1-5 in the first media, slides 6-20 in the second media file, and slides 21-30 in a third file.
+<P>
+This can be made to work quite well.  The naming conventions for the media files and event files changes, and you must choose a style which supports multi-part lectures.  The standard style shipped with Sync-O-Matic (sm2k) <i>does</i> support multi-part lectures.
+<P>
+Most users find it easier to create three separate lectures rather than multipart lectures.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060flipitplay> </a>
+<A HREF=060flipitplay.htm>
+<IMG SRC=060flipitplay.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:060flipitplay-->
+This is the screen when the events file has been deleted and the media control has been switched to <b>Play Media</b>.
+<P>
+To time this lecture, press
+<b>Next</b>.
+<P>
+Playing works the same as recording with one small difference.  When the media being played finishes, the timing process is automatically stopped.  So on the last slide, simply wait until the media finishes instead of pressing the <b>X</b> button.   It is also possible to stop the timing by pressing the <b>X</b> button before the media completes playing.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070timeitpressload> </a>
+<A HREF=070timeitpressload.htm>
+<IMG SRC=070timeitpressload.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:070timeitpressload-->
+This is the main screen for <b>TimeIT</b>.  TimeIT views and edits events files such as <b>rawmedia.txt</b>.  Unfortunately, TimeIT cannot edit files produced by <b>ClipBoard-2000</b> or the <b>Liberal Slide Names</b> mode of Sync-O-Matic.  If you try to load this type of file - typically called <b>images.txt</b> - TimeIT will complain.
+<P>
+Across the top, there are buttons to <b>Load</b> a file, <b>Reset</b> the data, <b>Save</b> a file, and
+<b>Exit</b> TimeIT.
+<P>
+TimeIT is a time-oriented spreadsheet.  At the bottom are the rows and columns of the spreadsheet.  The left column is the slide name - this either should be in the form of <b>sld000.htm</b> where "000" is replaced by the slide number or an absolute URL.  The second column is the start time of the slide and the third column is the end time of the slide.  One particular row in the second column will be green to indicate which row is being edited.  The first column will be red when TimeIT is concerned about the data in the row.  This can be a missing start or end time, or a start time which is after an end time.
+<P>
+On the last row, the end time is the overall clip time.  Before saving the file, no red should be showing.
+<P>
+The <b>Add</b> button creates a blank row below the current row.  The <b>Insert</b> button creates a new row above the current row.  The <b>Delete</b> button deletes the current row.
+<P>
+To edit the contents of the row, select the row by clicking on the center column in the row you want to edit.  It should become green and the values from the row should appear in the fields just above the grid.  The values can be edited in the two fields above the first and second columns.  The <b>Media Length</b> time can be entered in the field above the third column.  This is the ending time of the last slide in the presentation.
+<P>
+<P>
+The only other field is the "Auto-Matic Slide-Timing Adjustment Tool".  With this tool, you can add or subtract a fixed amount of time from all of the slide starting times.  You enter the amount of time to adjust and then press either the <b>+</b> or <b>-</b> key.
+<P>
+This is generally used in two ways.  First, if there was some mismatch between the time the slide timing was started and the media play or record was started, a few seconds can be trimmed or added.  Second if you are reading time codes or some other time information which does not start at zero, you can enter all of the times directly into TimeIT and then when done subtract the "zero" time from all of the starting times.
+<P>
+TimeIT is one of the features which is heavily used by the more sophisticated users of Sync-O-matic, such as those environments where Sync-O-Matic is used in a recording studio.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080timeitopenrawmediatxt> </a>
+<A HREF=080timeitopenrawmediatxt.htm>
+<IMG SRC=080timeitopenrawmediatxt.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:080timeitopenrawmediatxt-->
+In this example, we will edit the timing information of a previously recorded lecture.  We press <b>Load</b> and we are already in the proper directory, looking at <b>rawmedia.txt</b>.  We select the file and press <b>Open</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090timeitloaded> </a>
+<A HREF=090timeitloaded.htm>
+<IMG SRC=090timeitloaded.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:090timeitloaded-->
+We immediately see the relative timings for this lecture.  We can see when each slide starts and ends.  The first row is selected.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=100imeittrim3> </a>
+<A HREF=100imeittrim3.htm>
+<IMG SRC=100imeittrim3.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:100imeittrim3-->
+First, we will trim three seconds off each of the starting times, so we enter <b>0:03</b> in the trim field and press <b>-</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110timeit3trimmed> </a>
+<A HREF=110timeit3trimmed.htm>
+<IMG SRC=110timeit3trimmed.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:110timeit3trimmed-->
+Each start time has been reduced by three seconds. The overall time was OK, so we did not adjust it.  Next we will change the slide field for row three.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120timeit3rdlineurl> </a>
+<A HREF=120timeit3rdlineurl.htm>
+<IMG SRC=120timeit3rdlineurl.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:120timeit3rdlineurl-->
+We select the third row, and enter a new URL instead of a slide in the third row.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130timeit4thline12sec> </a>
+<A HREF=130timeit4thline12sec.htm>
+<IMG SRC=130timeit4thline12sec.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:130timeit4thline12sec-->
+There was a mistake on the start time for the fourth slide, so we select the fourth row and change the start time.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140timeitsaveas> </a>
+<A HREF=140timeitsaveas.htm>
+<IMG SRC=140timeitsaveas.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:140timeitsaveas-->
+We have completed our changes so we save the file with the same name in the same directory.  TimeIT has already navigated to the proper directory and has pre-filled in the file name.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150timeiturltest> </a>
+<A HREF=150timeiturltest.htm>
+<IMG SRC=150timeiturltest.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:150timeiturltest-->
+We publish the lecture and take a look.  The third slide has been replaced by a reference to the Sync-O-Matic Web site.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160timeithandtime> </a>
+<A HREF=160timeithandtime.htm>
+<IMG SRC=160timeithandtime.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:160timeithandtime-->
+Another use of TimeIT is to hand-enter times from some other source than FlipIT.
+<P>
+Press the <b>Reset</b> button to clear out any extraneous values.  With the first row
+selected, enter <b>sld001.htm</b> in the <b>Slide</b> field and the start time for slide one in the <b>Start Time</b> field.  Then press the <b>Enter</b> key.  The data will be entered and a new line will be inserted.  The key is to press <b>Enter</b> after you put in the start time values.
+<P>
+Once you get started, you can type a series of start times, each followed by <b>Enter</b> without using the mouse.  If you make mistakes, you can navigate through the timings, adding, deleting and editing values.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170timeittype4lines> </a>
+<A HREF=170timeittype4lines.htm>
+<IMG SRC=170timeittype4lines.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=320 ALIGN=RIGHT>
+</A>
+<!-- file:170timeittype4lines-->
+When the data is typed in, the screen should not have any red rows.   Use the <b>Save</b>
+button to store the data when you are done.
+<BR CLEAR=ALL>
+Using the advanced features of Sync-O-Matic is best done once a little experience is gained and a few lectures have been published successfully.
+<P>
+Sync-O-Matic has been designed to allow you to look at how it works internally.  It is a good idea to familiarize yourself with how data is stored on disk, and the different types of files and how they are used by Sync-O-Matic before attempting the "higher difficulty" Sync-O-Matic tricks.
+<P>
+But once you master the advanced mode, you will have a lot of flexibility in how you integrate Sync-O-Matic into your particular production process for web-based lectures.
+<a href=../index.htm>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<!-- Copyright 2000, Computer Resource Services -->

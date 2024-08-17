@@ -1,0 +1,6 @@
+<!-- file:047nowyouseeslides-->
+Once the flag is turned on, the directory is re-scanned and the image files are found.
+
+You can use the <b>+</b> or <b>-</b> to scan to see if Sync-O-Matic has found all the slides you think should be there.
+
+It is important <i>not</i> to use this mode on directories which have been created from a PowerPoint-97 <B>Save As HTML</b> process.  PowerPoint puts about 8 extraneous GIF images into the directory for various purposes including advertising Internet Explorer.  If these directories are used with <b>Liberal Slide Names</b> turned on, these extraneous GIF images will be part of the lecture.

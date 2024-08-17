@@ -1,0 +1,6 @@
+<!-- file:100convertedseeplus-->
+The conversion will show its progress on the status bar at the bottom of the screen.  It should step through each slide, converting it to a GIF and finding the title of the slide.
+
+Once it is complete the <b>Record Lecture</b> button will be enabled.  If you want, you can use the <b>+</b> and <b>-</b> buttons to look at thumbnails of the slides.
+
+The next step in the tutorial is to record a lecture, so press the <b>Record Lecture</b> button.

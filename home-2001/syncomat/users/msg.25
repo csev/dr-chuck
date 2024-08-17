@@ -1,0 +1,38 @@
+Sync-O-Matic Newsletter-25
+Sun May 28 01:16:42 EDT 2000
+
+Hello all.  Version Alpha 6 is out with some major cleanup and new 
+features.  Alpha 5 was out - but even before I announced it, Deborah 
+found that I had reintroduced a bug so I had to come out with 
+version A6.
+
+Take a look at the "What's new" section in the download page.  There 
+was lots of cleanup, and a few new features as well.
+
+The new style (sy2k) now can deal with video of varying sizes and 
+I added a feature to allow users to sync naturally to pre-digitized 
+Real Media (Furio's request pushed me over the top on this one).  
+But check the what's new for all of the gory details.
+
+Originally I thought that A3 was the "almost Beta" version of 
+the code.  But several users told me not to remove all of the 
+"old" features from -3000 - so this A4 through A6 rethought 
+how to keep nearly all of the old capabilities in the 
+"More Detail" mode.
+
+But of course, then I have to document all of the new and 
+powerful features in the "More detail" mode.
+
+But with all of that said, I think that A6 is the "nearly Beta" 
+version of the code.  Unless I hear lots of feedback about the 
+user interface, my focus will shift to bug-fixing and writing 
+documentation.  So I would much appreciate it if you could 
+upgrade to A6, and make sure nothing is broken.  I will be 
+doing my own testing in the next week or so as well.
+
+Just for fun I put up the lectures from my entire 3 Credit course
+which I taught using Sync-O-matic from 1997-1999 at Michigan State 
+University.  Let me know what you think.
+
+/Chuck
+

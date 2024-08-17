@@ -1,0 +1,21 @@
+Fri Jan 15 16:33:13 EST 1999
+
+Update on the continuing saga fo Sync-O-Matic 1.7.  
+
+(1) Fixed a tiny bug that made audio-only (.ra files) not work with G2.
+(2) Created a new audio-only style "audio" which expects audio
+in the .rm files.  This makes more sense because in G2 everything is a rm.
+(3) Real has a new release of the player (6.0.3.143 or later) that fixes
+the ActiveX plug-in so I can remove my "testing" hack and make it work
+like it in previous versions.  (Thanks Haydon)
+
+This updates:
+
+http://www.egr.msu.edu/~crs/projects/syncomat/install/syncinfo.zip
+http://www.egr.msu.edu/~crs/projects/syncomat/install/sync.zip
+
+Just go through the standard install process.
+
+/Chuck
+crs@msu.edu
+http://www.egr.msu.edu/~crs/projects/syncomat/

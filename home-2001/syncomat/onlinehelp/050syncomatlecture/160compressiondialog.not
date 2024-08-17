@@ -1,0 +1,4 @@
+<!-- file:160compressiondialog-->
+Often video capture device drivers have the ability to compress data inside the device driver.  Because Real has its own (very slick and sophisticated) compression, if Real is given compressed data, it must uncompress the data and then recompress the data again.  This causes a significant performance penalty and a significant loss of quality.  So don't use any form of compression.
+
+Some drivers cannot provide uncompressed data (ATI All-In-Wonder Pro).  It is not the end of the world, but it is a good reason to buy a WinTV capture card instead.

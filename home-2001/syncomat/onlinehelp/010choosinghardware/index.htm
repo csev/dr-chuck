@@ -1,0 +1,206 @@
+<a href=http://www.netfact.com/syncomat/index.htm target=_top>
+<IMG SRC=../logo.gif align=RIGHT border=0>
+</a>
+<h3>Hardware for use With Sync-O-Matic 3000</h3>
+<p>
+Sync-O-Matic works with a wide range of WinTel computer systems.  A good minimum system would include the following:
+<ul>
+<li>Pentium-II 300Mhz or higher
+<li>64MB Memory or higher
+</ul>
+Syncomat can work on much slower computers, but the above seems to have plenty of horsepower for most applications.  The main performance issue is the CPU requirement for live encoding.   If you are trying to do 640x480 at 30 frames per second, expect to need a faster processor than a P-II 300.
+<h3>Video Hardware</h3>
+<p>
+There are a number of different video options, both for portable and desktop computers.  
+Both can use USB cameras.  USB cameras are very convenient because USB supplies their power
+and they are self contained.  However, many small USB cameras give poor video quality.  
+The problems fall into two categories:
+<ul>
+<li>Poor ability to adjust to differing light conditions.  Consumer camcorders have amazing ability to adjust to the light available in your basement or outdoors.  A low-cost USB 
+camera will often be muddy in low-light conditions, washed-out outdoors, too blue in fluorescent light, too pink in incandescent light ...
+<li>Poor picture quality.  Because the USB connection to the computer is effectively a 
+network connection, many cameras compress the data for efficiency.  This compression results in a loss of quality and a loss of performance on your system as each frame is uncompressed
+once it is received.
+</ul>
+As you might guess, a USB camera such as the Kritter/USB is not highly recommended.  Using USB may force you to have a significantly faster processor to achieve the same results. 
+But the problem with USB cameras is about 50% due to bad cameras and 50% due to USB.  A USB
+video adapter such as a Dazzle coupled with a good camera can give good picture quality 
+at a performance cost.
+<p>
+<table border=3>
+<tr>
+<td colspan=3 align=center>
+USB Capture Solutions
+</td>
+</tr>
+<tr>
+<td>
+<a href=http://www.irez.com>
+Kritter/USB
+</a>
+<td>
+Poor
+<td>
+Camera seems to have bad light qualities and bad compression artifacts.
+</tr>
+<tr>
+<td>
+<a href=http://www.dazzle.com/>
+Dazzle DPM
+</a>
+<td>
+Medium
+<td>
+This needs to use a good video camera, but results can be quite nice.
+</tr>
+</table>
+<p>
+Expect to pay $50-$150 for this type of camera.  Note: These are the cameras I have
+tested to date.  More expensive USB solutions may work better.
+<p>
+<b>Portable Non-USB Solutions</b>
+<p>
+To get better performance/quality, you need a PCMCIA video capture card.  These cards have the advantage of DMA access to memory and can place each (properly sized) uncompressed frame 
+into memory without taking any CPU time.  Then the encoding process just grabs it and compresses it.  Good quality and low CU usage - that rules.
+<table border=3>
+<tr>
+<td colspan=3 align=center>
+PCMCIA Capture Solutions
+</td>
+</tr>
+<tr>
+<td>
+<a href=http://www.irez.com>
+Kriter/SV
+</a>
+<td>
+Excellent
+<td>
+The camera comes with a CapSure card which can be used to digitize other sources with S-Video or composite input.
+</tr>
+<tr>
+<td>
+<a href=http://www.nogatech.com/>
+NogaTech 
+</a>
+<td>
+Excellent
+<td>
+NogaTech has several bundles of cards and cameras which all perform well.
+</tr>
+<tr>
+<td>
+<a href=http://www.sony.com/>
+Sony PC-1G
+</a>
+<td>
+Excellent
+<td>
+Sony has an ultraportable with a built-in camera.  Its quality and performance are excellent.
+</tr>
+</table>
+<p>
+Overall, you can see that all PCMCIA cards tested perform very well.  The Kritter's
+have the advantage that they work in both PC and Mac portables.
+<p>
+<B>Desktop NonUSB Solutions</b>
+<p>
+There are three basic types of video capture on desktop systems.
+<ul>
+<li>Simple uncompressed capture cards - often based on the BT848 chipset
+<li>Fancy compressing capture cards which support MJPEG, MJPEG, or H.323
+<li>Firewire (IEEE 1384) cards
+</ul>
+Don't bother trying to use either of the last two for Sync-O-Matic.  They are not capable of
+resizing the video and delivering the simple uncompressed frames to RealProducer.
+The good news is that the cards that work best with RelProducer are usually under a
+hundred dollars. 
+<p>
+<table border=3>
+<tr>
+<td colspan=3 align=center>
+Desktop PCI Capture Solutions
+</td>
+</tr>
+<tr>
+<td>
+<a href=http://www.irez.com>
+All-In-Wonder-Pro
+</a>
+<td>
+Medium
+<td>
+The All-In-Wonder Pro cannot deliver uncompressed frames.  Quality can be reasonable
+but it is not a first choice.  The All-In-Wonder 128 series may be better, but has 
+not been tested.  If you have an All-In-Wonder Pro, you can use it but don't go out and buy one.
+</tr>
+<tr>
+<td>
+<a href=http://www.hauppauge.com/>
+WinTV
+</a>
+<td>
+Excellent
+<td>
+This is a pure and simple capture card with excellent results.  One advantage is
+that it is usually in stock at your office supply store and you can watch cable TV
+when you are not doing Sync-O-Mat.
+</tr>
+<tr>
+<td>
+Osprey-100
+<td>
+Excellent
+<td>
+This is the card recommended by Real.  It works fine, but no better than the WinTV.
+The Osprey is more expensive, and not in stock, so you might be better off jumping into the
+car and buying the WinTV.
+</tr>
+</table>
+<p>
+<h3>Audio Hardware</h3>
+<p>
+This may sound simple, but it is not.  First, there are three different types of microphones.
+<ul>
+<li>Camcorder microphones - Typically mono microphones that you would  buy in the camcorder section of a store.  These microphone plugs have a tip and one ring.
+<p>
+<li>Amplified PC microphones - This is the standard (made by SoundBlaster) now supported by
+all PC manufacturers.  This is a mono microphone, but its plug has a single tip and two rings.  The second ring provides power from the computer to the microphone so as to 
+amplify the level of sound produced by the microphone.  You would purchase this 
+microphone from an electronics store in the computer section.  A good basic brand is 
+LabTec.  A good microphone is pretty inexpensive in the $7.00-$20.00 range.
+<p>
+<li>Amplified Macintosh Microphones - Macintosh microphones are also amplified, but the tip shape is different than the PC amplified microphones - there is a tip and two rings, but on 
+Macintosh, the middle wing is much wider - about 3/8" for the middle ring on the Mac whereas 
+the middle ring on the PC is more like 1/8".
+</ul>
+Given that you will be using a PC, don't bother to use anything but a PC amplified Mic.  They just won't work.
+Generally the built-in microphones in portable PC computers are terrible so you must buy a separate mic to get any decent quality.
+<p>
+In addition to having Microphone inputs, many computers also have "line-level" inputs or "auxiliary inputs".  While these usually are shaped the same as microphone plugs, they are quite different.  They accept stereo - the plugs are usually a tip and two rings with the middle ring about 1/8" wide (yes - it looks jut like a PC powered microphone).  Typically all equipment (other than computers) use RCA connectors with red and white used to indicate the two channels.  You can buy an adapter from the mini 1/8" stereo plug to two RCA 
+adapters at Radio Shack for about $1.00.
+<p>
+So, why do we care?  Well, camcorders and VCR's use line-out and so to digitize from these sources you will need a line-in connection - you cannot use the microphone connection.
+<p>
+<h3>Using a Camcorder</h3>
+<p>
+While it is great fun to use a slick little camera, there is actually some non-trivial benefit in using a camcorder to record lectures.  
+<ul>
+<li>Camcorders have excellent automatic light adjustment
+<li>Camcorder have excellent built-in microphones with automatic gain control
+<li>Camcorders can be used with a wide variety of microphones ranging from shotgun to wireless.
+<li>You can record the lecture to tape at the same time in case something goes wrong
+or you want a higher quality version of the lecture later.
+</ul>
+<p>
+So to make this work, you connect the (camcorder-style) microphone to the camcorder.  Most camcorders have both RCA/Composite (yellow jack) and S-Video outputs - if your video capture card supports it, use S-Video - it is much better quality.  Then connect the audio outputs 
+to the line level inputs on your PC - make sure to mute the PC speaker while recording or you will get feedback.
+This setup gives good quality video and audio and lots of options in terms of microphones.
+<p>
+<h3>Conclusion</h3>
+<p>
+You have a wide range of hardware choices.  If you are planning on spending hours making video material, think about spending a little money and making sure that you have good quality results.  the more attention to audio and video detail up front, the better your
+compressed video will look.  If you start with noisy video or audio in the beginning, the compression process often turns it into mush.
+<p>
+Please send feed back on this document if you have any questions or other experiences with
+video/audio hardware.

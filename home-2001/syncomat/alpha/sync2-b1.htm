@@ -1,0 +1,29 @@
+<h1>Changes in This version</h1>
+Sync-O-Matic 2000 Version Beta-1
+<p>
+Well, finally the day comes when there is a Beta version.  Things seem to be settling down.
+There have not been too many recent user interface complaints.  I hope the changes in this release have addressed most of the issues.
+<p>
+In a fit of optimism, I wrote documentation for everything.  It can still be improved,
+but it is a basic structure.
+Changes:
+<ul>
+<li>
+Fixed the "Unable to Setup Encoder" message - turned out not to be my fault - The ActiveX control behaved strangely when I used two particular calls in a particular order.  Things got better when I added a 1 second delay between the calls - Ick.  Instead of trying to guess how long the wait should be, I re-thought things and came up with a clean workaround for the Real Bug.  This fixes the Skip problem.
+<li>
+Fixed the loss of the titles from exported PowerPoint.  Unlike the previous example, this was my fault.  I put a > in when I meant =.
+<li>
+A bunch of new preferences were put in.  The most significant is the ability to force SM to come up in advanced/power user mode.
+<li>
+Did some internal code review of the process of Open Lecture and New lecture.  Cleaned things up a bit.  I had seen a bug from time to time where you would "open" and the fields would not update until you would do the open again.  Hopefully this cleanup will catch that.
+<li>
+I did some research into the complaint that "Sync-O-Matic was not cleaning up its directories properly."  Luckily I found a quick way to reproduce the problem so I added a few more meaningfull messages in the error condition.  But I needed to find "Why?" it was happening.  Turns out that a file in the synccd directory was being left open after the browser was exited.  So, a Publish-test-Publish sequence would fail depending on how you terminated the browser.  It turns out the problem occurs when you exit the browser with the <b>X</b> button in the upper-right corner while the media is still playing.  Some folks would not do this at all, and other people who are in a massive hurry do it all of the time.  Once the browser (and plugin) have been blasted in this unfortunate way, the file remains open until the machine is rebooted.
+<p>
+But all hope is not lost.  There is a way to solve the problem.  Instead of hitting the <b>X</b>, first go to another page (without a plug-in) - I hit Home - before exiting the browser with the <b>X</b>.
+<p>
+Testing indicated that the System Tray Real Thing had no impact.  Simply stopping the player before pressing the <b>X</b> did not fix the problem.  Pretty much you ned to be on a page without a Real Plugin before you hit <b>X</b>.
+</ul>
+<p>
+Isn't it fun to use Off-the-shelf components??  At this point, I would say that 20% of my developer time is spend working around undocumented behaviors of components from someone else (Real or Microsoft) typically.  I think the problem is that they don't use their own components.  Of they do and figure that if it works for them, then any other developer must be doing SOMETHING wrong.
+<p>
+Ah well.  I am glad the users of Sync-O-Matic have some patience.

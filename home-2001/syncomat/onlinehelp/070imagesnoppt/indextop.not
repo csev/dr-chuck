@@ -1,0 +1,17 @@
+<h3>Lectures Without PowerPoint</h3>
+Sync-O-Matic is capable of dealing with various sequences of images
+other than those produced by a PowerPoint.
+<p>
+These images may come from any number of sources:
+<ul>
+<li>
+A scanner - These slides may come from a live lecture where the speaker brought "real" overheads.  See the
+<a href=http://webcast.cern.ch/Projects/WebLectureArchive/>CERN Web Lecture Archive Project</a> for an excellent example of the use of scanned slides.
+<p>
+<li>
+Some people use PhotoShop or some other program to develop their images because they
+prefer it.
+</ul>
+<p>
+With the <b>Liberal Slide Names</b> option enabled,
+Sync-O-Matic looks for files with either the .jpg or .gif extension in the lecture directory.  When you select a directory, it scans the directory to see the images that it can find and then it sorts them alphabetically.  So a good naming convention is quite useful.

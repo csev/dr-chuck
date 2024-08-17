@@ -1,0 +1,66 @@
+<HTML>
+<TITLE>Button Demo</TITLE>
+<HEAD>
+<SCRIPT LANGUAGE= "JavaScript">
+<!-- begin hiding from old browsers
+// Global Variable
+var globalString = 'A'
+// Functions
+function changeToB(){
+	document.outputForm.beforeB.value = globalString
+	globalString = "B"
+	document.outputForm.afterB.value = globalString
+}
+function changeToC(){
+	document.outputForm.beforeC.value = globalString
+	globalString = "C"
+	document.outputForm.afterC.value = globalString
+}
+// end of hiding from old browsers -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="lightsalmon">
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- begin hiding from old browsers
+document.write("The initial value of globalString is \"".fontcolor("crimson") +
+ globalString.fontcolor("crimson") + "\".".fontcolor("crimson")) 
+// end hiding from old browsers -->
+</SCRIPT>
+<BR><BR<>
+<FORM NAME="outputForm">
+<INPUT
+	NAME="changeButtonA"
+	TYPE="button"
+	VALUE="Change To B"
+	onClick="changeToB()">
+<INPUT
+	NAME="changeButtonB"
+	TYPE="button"
+	VALUE="Change To C"
+	onClick="changeToC()">
+<BR><BR>
+Value of globalString<BR>
+<BR>
+<INPUT
+	NAME="beforeB"
+	TYPE="TEXT"
+	SIZE=5,1>
+Before clicking on "Change To B"<BR>
+<INPUT
+	NAME="afterB"
+	TYPE="TEXT"
+	SIZE=5,1>
+After clicking on "Change To B"<BR>
+<INPUT
+	NAME="beforeC"
+	TYPE="TEXT"
+	SIZE=5,1>
+Before clicking on "Change To C"<BR>
+<INPUT
+	NAME="afterC"
+	TYPE="TEXT"
+	SIZE=5,1>
+After clicking on "Change To C"<BR>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,4 @@
+<!-- file:040prefsupload-->
+This screen allows you to set the default host name and account for the FTP upload to the Web and repository.
+
+As noted, if you leave the host name for standard FTP uploads blank, Sync-O-Mat will parse the URL for the FTP host name.

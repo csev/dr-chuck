@@ -1,0 +1,28 @@
+<h1>Changes in This version</h1>
+Sync-O-Matic 2000 Version Alpha-7B
+<p>
+Changes:
+<ul>
+<li>
+Changed the moment where it checks for the existance of the RealProducer control.  Earlier
+versions checked immediately upon load.  Now the check is delayed until the last possible
+moment - typically the make lecture or record lecture process.  Added checks everywhaere the
+RealProducer or RealPlayer ActiveX control is loaded.
+<li>
+Added buttons for RealProducer Plus to the Compatibility section of Prefs.
+<li>
+Tested using compatibility mode - Found lots of little problems with paths with spaces in them - added double quotes around them - where I found them - there may be tiny problems that I missed with a particular version of RealProducer as far back as 3.0.
+<li>
+Fixed a bug where the "Auto-Executing" hung and never went to "Process Done" on NT.  You guessed it - spaces in the path name.  
+<li>
+Removed the feature (which I assume no one uses) where there was a "net" and "local" subdirectory within the "copy" directory.
+</ul>
+<p>
+While this fixes a few bugs, in general there is not much new since A6.  That is a good sign.  Full documentation should be forthcoming soon.
+<h3>To Do</h3>
+<ul>
+<li>Add a way to access registration info in a style
+<li>More styles - the Andrew styles and the SMIL style
+<li>Testing testing testing
+<li> Way out: Add AVI capture, Think about Sync-O-Matic-1000 :)
+</ul>

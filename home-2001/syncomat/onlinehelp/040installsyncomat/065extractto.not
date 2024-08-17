@@ -1,0 +1,3 @@
+<!-- file:070extractto-->
+The contents of the .zip file are an install package.  There is a <b>setup.exe</b> and a bunch of files.  In this example, we will extract to 
+<b>C:\Temp\sync2k\</b>.

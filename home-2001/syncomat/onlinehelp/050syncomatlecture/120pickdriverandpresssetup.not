@@ -1,0 +1,8 @@
+<!-- file:120pickdriverandpresssetup-->
+When the video options appear, you need to select the driver from the pick list and then press <b>Setup</b>.
+
+You may need to figure out the proper driver using some trial and error.  In general, avoid the "WDM" drivers as your first try.
+
+If things don't work, you may even have to exit Syncomat and restart.
+
+Once the right drivers are selected, press <b>Setup</b>.  Now all of the device drivers are initialized - this process might take 30 seconds to complete.

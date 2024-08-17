@@ -1,0 +1,5 @@
+<!-- file:030selectdirpressnewdir-->
+This is the standard directory selection dialog used throughout Sync-O-Matic.  Sometimes the 
+<b>New Dir</b> button is enabled and sometimes it is disabled when you are not expected to be creating directories.
+
+In this case, we need a separate directory for each lecture. The convention we will use in this example is to make each lecture a subdirectory of <b>C:\My Documents\lectures\"</b>, so press <b>New Dir</b>.

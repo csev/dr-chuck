@@ -1,0 +1,16 @@
+<!-- file:030executemenu-->
+The <b>Execute</b> menu has a number of options.
+
+<b>Import PowerPoint</b> allows you to search for and import the slides from a
+PowerPoint file (*.ppt) into the Lecture Directory.
+
+<b>Import ClipBoard</b> allows you to automatically convert Quicktime media coming from the ClipBoard-2000 application.  This feature is documented in a 
+<a href=../100clipboard/index.htm> separate section</a>.
+
+<b>Record Lecture</b> walks you through the process of recording the lecture and timing the slides.  This operates the same as in the Less Detail mode.
+
+<b>FlipIT!</b> is a much more sophisticated interface to the lecture recording process.  Using FlipIT, you have much more control how slides are presented, whether media is recorded or played, and supports multi-part lectures.  The most common reason that people use FlipIT! is to time slides while playing pre-recorded media.  Multi-part lectures are somewhat complex to use.  FlipIT is documented later in this section.
+
+<b>TimeIT!</b> is tool to edit event files.  TimeIT also allows you to create event files from hand-timed material.  It operates like a spreadsheet specifically designed for timings.  TimeIT! does not work with timing information from ClipBoard or the Liberal Slide Names lectures.  TimeIT is documented later in this section.
+
+<b>Make Lecture</b> triggers the publishing process.  It is the same as pushing any of the (3) Publish buttons.

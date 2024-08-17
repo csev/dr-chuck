@@ -1,0 +1,3 @@
+#! /bin/csh
+
+awk -F@ '{print $1}' < list | sort | uniq -d 

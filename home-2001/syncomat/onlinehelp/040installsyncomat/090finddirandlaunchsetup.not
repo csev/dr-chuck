@@ -1,0 +1,4 @@
+<!-- file:090finddirandlaunchsetup-->
+Once the files are extracted, navigate to the directory and execute <b>setup.exe</b>.
+
+If you are running on NT make sure that you are an Administrator.  This process will install and register lots of stuff, so without Administrator permission, it is pointless to proceed.  On Windows-95 and Windows-98 everyone is an administrator, so it is much simpler :).

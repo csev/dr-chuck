@@ -1,0 +1,10 @@
+<!-- file:040testmenu-->
+This testing menu allows you to use/test several important components of Sync-O-Matic separately.
+
+Sync-O-Matic uses ActiveX to operate RealPlayer, RealProducer (Live and off-line encoding), and PowerPoint.
+
+If you are having troubles with Sync-O-Matic's interaction with any of these components you can use these test modes to see if the basic functionality and communication between Sync-O-Matic and these components is working.
+
+Using these can be quite helpful when communicating with Sync-O-Matic support.  It is quite helpful if you can say something like, "I tested PowerPoint in test-mode and was able to do all of the functions just fine."
+
+Someday these functions might be removed from a future version of Sync-O-Matic - but given the challenges communicating with these components as new versions of the components are released, the menu will probably never be removed :).

@@ -1,0 +1,5 @@
+Using the advanced features of Sync-O-Matic is best done once a little experience is gained and a few lectures have been published successfully.
+
+Sync-O-Matic has been designed to allow you to look at how it works internally.  It is a good idea to familiarize yourself with how data is stored on disk, and the different types of files and how they are used by Sync-O-Matic before attempting the "higher difficulty" Sync-O-Matic tricks.
+
+But once you master the advanced mode, you will have a lot of flexibility in how you integrate Sync-O-Matic into your particular production process for web-based lectures.

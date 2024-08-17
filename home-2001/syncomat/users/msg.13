@@ -1,0 +1,22 @@
+Tue Feb  9 17:39:35 EST 1999
+
+Sync-O-Matic 3000 Newsletter: Number 13
+
+Version 1.8 is up on the web.  New features include the ability to make
+G2 only lectures.  This required some changes to the code and a new
+style "g2".  So you need both version 1.8 and a new syncinfo.zip file.
+
+I need some help with the G2 style - it is a just a rough style.  I have
+not yet figured out how to put SMIL stuff on a server (G2 or http).  Any
+help would be much appreciated.  I also need to figure out how to 
+do random access wit smil files as well.
+
+This version also includes a fix for the dreaded "Runtime Error 5" 
+error that was reported from time to time.
+
+I also have written some initial documentation on how style files work
+at http://www.egr.msu.edu/~crs/projects/syncomat/help/style.htm
+
+/Chuck
+crs@msu.edu
+http://www.egr.msu.edu/~crs/projects/syncomat/

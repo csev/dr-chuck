@@ -1,0 +1,21 @@
+Sync-O-Matic Newsletter-19
+Sat Apr  1 09:49:24 EST 2000
+
+Quick update on version 1.12
+
+I already figured this one out.  My installation is not registering this
+file properly.  I don't know how to do that but, installing the
+RealProducer ActiveX control does it right and installing RealProducer 7
+also does it right.
+
+/Chuck
+
+> Yes. The error is :
+> Component 'PRCT3260.OCX' not correclty registered: file is missing or
+> invalid
+>
+
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/      

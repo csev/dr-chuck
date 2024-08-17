@@ -1,0 +1,23 @@
+Sync-O-Matic Newsletter-20
+Mon Apr  3 10:26:54 EDT 2000
+
+I told you there would be some quick updates.  Version 1.13 is out right now
+and version 1.14 will be out tomorrow morning (so I am sending one note).
+
+No major problems to report.  The biggest in 1.13 is the ClipBoard Import
+function did not work because of some additional error checking I added 
+too early in the code.  The more frustrating news is that once I got that
+fixed, I found that RealProducer on the PC seems not to be able to handle too
+many different Quicktime video/audio types.  Quicktime can play the material 
+on the PC, Real just can't encode it.  The good news is that RealProducer 
+7 beta 3 on the Mac seems to be much more comfortable with Quicktime.
+
+Version 1.14 (tomorrow) will (at least) have more descriptive messages in
+several places, and support doing the Quicktime->Real conversion on the Mac.
+Unfortunately, it will require an extra manual step in a process (ClipBoard
+Import) that I hoped to completely automate.
+
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/      

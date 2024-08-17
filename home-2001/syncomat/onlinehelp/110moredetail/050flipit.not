@@ -1,0 +1,24 @@
+<!-- file:050flipit-->
+This screen is when FlipIT has been executed on a directory which already contains a lecture.  All of the yellow is indicating areas of concern.
+
+At the top there is a status area.  It is currently concerned that there is already an events file in this directory.
+
+The next area is the <b>Events File</b> - this is a small text file which contains timing information indicating what time each slide is to be displayed while the media is played.  The <b>Delete</b> button removes this file.  This is yellow because if we are recording a new lecture, this file should not exist.  So for this example, we delete the file and the field becomes white and the status is updated.
+
+The following area is the <b>Media File</b> - it is also yellow because the file exists and the current settings at the bottom of the screen indicate that we will be recording new media.
+
+The <b>Starting Slide</b> allows you to start somewhere other than the first slide in the sequence.  Typically this is left at one.
+
+The <b>Start-Up Delay</b> is a value (in seconds).  This is used to add a delay from the time the <b>+</b> is pressed until the timer is actually started.  This is typically used when the RealProducer takes 3-4 seconds from the time it is started until it actually starts recording.  The default is zero seconds indicating that the timer is started immediately when the <b>+</b> key is pressed.  If the delay is wrong, a few seconds can be trimmed from or added to each time using TimeIT!.
+
+You can display slides in a full-screen, small, window or not at all based on the radio buttons in the <b>Slide Display Style</b> area.
+
+You can record new media, play existing media (must be the file name in <b>Media File</b>), or do no media.  The <b>No Media</b> option is provided to allow you to synchronize to any source such as the Quicktime player, a video tape, or a live performance where the encoding is done on another computer.  For this example, we already have the media so we select <b>Play Media</b>.  At that point, all the fields will be white.
+
+<b>Multi-Part Lectures</b>
+
+You can record multi-part lectures using Sync-O-Matic.  In a multipart lecture, you have one sequence of slides, but several different media files.  For example a 30 slide presentation might be in three files with slides 1-5 in the first media, slides 6-20 in the second media file, and slides 21-30 in a third file.
+
+This can be made to work quite well.  The naming conventions for the media files and event files changes, and you must choose a style which supports multi-part lectures.  The standard style shipped with Sync-O-Matic (sm2k) <i>does</i> support multi-part lectures.
+
+Most users find it easier to create three separate lectures rather than multipart lectures.

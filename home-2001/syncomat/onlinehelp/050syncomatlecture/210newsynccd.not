@@ -1,0 +1,6 @@
+<!-- file:210newsynccd-->
+Syncomat will produce a directory full of files with a web lecture suitable for play off the local disk.  The naming convention is to create a subdirectory called <b>synccd</b> as a subdirectory of the main lecture directory.
+
+This naming convention can be altered in <b>Options | Preferences</b>.
+
+In this tutorial, we just accept the default and press <b>Yes</b>.

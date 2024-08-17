@@ -1,0 +1,12 @@
+#! /bin/csh
+
+if ( $#argv < 1 ) then
+  echo Please specify a file name
+  exit
+endif
+
+set list=`awk -F: '{print $1}' < betalist`
+
+foreach i ( $list ) 
+  echo /usr/um/bin/mail $i '<' $1
+end

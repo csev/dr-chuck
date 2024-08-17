@@ -1,0 +1,30 @@
+<!-- file:010moredetail-->
+The screen is divided into five basic areas.  At the top is the status information and current lecture directory.  The lecture directory can be changed by using <b>File | Open</b> or the <b>Browse</b> button by the <b>PowerPoint Output</b> directory.
+
+The <b>Status</b> area is used for status during Sync-O-Matic execution and error messages.
+
+Pressing the icon on the right is the same as pressing the <b>Publish</b> button.
+
+The second area shows the input material for Sync-O-Matic.  The <b>PowerPoint Output</b> directory contains the slides and images. The <b>Media Directory</b> contains the media files (*.rm) and events files (*.txt).  Normally, these two directories are the same.  To be compatible with earlier versions of Sync-O-Matic, you can separate these materials.
+
+The <b>Copy Materials</b> points to a directory of information which is copied into the destination directory after the lecture publication is complete.  Generally this directory is empty or does not exist.
+
+The third area allows you to select different styles for lecture publication.  Sync-O-Matic has a very flexible mechanism which allows you control how your media is presented.  Style files are documented in some detail in a 
+<a href=../080stylefiles/index.htm>separate chapter</a>.
+
+The fourth area is used to produce a lecture playable from Disk or a CD-ROM.  You can specify an output directory to hold the materials.  You can also publish the materials and test them with the buttons provided.
+
+In the bottom area, we can see the web publish section.  You can specify the output directory, ultimate web URL, and optionally the streaming base URL.  Because of limitations of the interaction between Real and the browser, it is necessary that lectures be published with the ultimate destination URL completely specified.
+
+There is a check box to indicate whether you will be storing the materials on a streaming server.
+
+Buttons allow you to publish, upload, and test the web-lecture.  To test a web lecture, it <i>must</i> be uploaded - the materials will not work played off the local disk.
+
+<b>Usage Notes</b>
+
+It is possible to publish <i>both</i> the Hard/Disk and Web versions at the same time.  This is done by checking both check boxes and pressing any <b>Publish</b> button or 
+<b>Execute | Make Lecture</b>.
+
+Also, note that when you change the lecture directory, the preferences are used to fill in the remaining fields.  Once the lecture directory is set, you can manually change any of the fields to any value you like.  But if you change the lecture directory, the preferences will be reapplied.
+
+All of the publish buttons do the same thing as </b>Execute | Make Lecture</b> so if you check both the box for Disk and Web and press the <b>Publish</b> button in the disk area, both the disk version <i>and</i> the web version will be published.

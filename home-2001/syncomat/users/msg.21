@@ -1,0 +1,27 @@
+Sync-O-Matic Newsletter-21
+Thu Apr  6 01:46:05 EDT 2000
+
+Wow - my server went down because of a routing problem.  Got it back up tonight.
+Version 1.14 is up.  A few changes:
+
+-  Just use RealProducer 7.0 with Sync-O-Matic after version 1.17
+-  The PC version of RealProducer does not handle Quicktime too well
+   Sync-O-Matic detects this and suggests using the Mac RealProducer
+   manually to convert ClipBoard/Quicktime to Real
+-  I tried to make Import work with PPT-2000
+-  I completely re-did the FTP interface and fixed some bugs
+-  There is a little "test" menu for some of the modules - I will remove
+   it in a later release - but it might help diagnose a problem
+-  Spent some time giving better error messages based on user feedback
+-  Fixed some NASTY little bugs on "make lecture for the web" introduced 
+   in 1.12
+
+More detail is available at  
+
+http://www.netfact.com/crs/projects/syncomat/install/index-114.htm
+
+TTFN.
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/      

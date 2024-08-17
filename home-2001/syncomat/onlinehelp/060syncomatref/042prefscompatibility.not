@@ -1,0 +1,12 @@
+<!-- file:042prefscompatibility-->
+Generally, this screen should be left to default values.
+
+By default, Sync-O-Matic uses the RealProducer ActiveX control to record, examine, and edit RealMedia (.rm) files as necessary.  This requires RealProducer 7.0 or later to be installed.  This works very conveniently under typical situations.
+
+Two situations arise where you might not want to use the defaults.  If for some strange reason the RealProducer ActiveX control is having problems, the lecture publishing process can be done using explicit calls to Real command line utilities.
+
+The second scenario is when you want to produce media that can be played on earlier versions of RealPlayer.  Sync-O-Matic supports using media as far back as RealAudio 2.0 (before RealVideo even existed).  Typically the farthest people go back is version 5.0 to insure the broadest player capability.
+
+Unfortunately, it seems as though small improvements to RealProducer cause slight changes to media formats which causes client players to continuously try to upgrade themselves.  In some enterprise-wide solutions, end-users cannot even upgrade their Players, rendering the media unviewable. 
+
+In these situations, we recommend sticking with RealProducer 5.0 - sometimes you can download the older versions from the Real site.  If you have specific problems with this, contact Sync-O-Matic technical support.

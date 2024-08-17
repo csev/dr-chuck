@@ -1,0 +1,34 @@
+Source Code License for Sync-O-Matic
+
+This license covers the source code to the product known as Sync-O-Matic
+(www.syncomat.com).
+
+By siging and returning this agreement, the licensee agrees to the following:
+
+- That the source code to Sync-O-Matic 3000 is Copyright 2000, 
+Charles Severance
+
+- That the source code is to be used by the organization to produce 
+versions of Sync-O-Matic for their own use.  The licensee cannot
+ distribute their own version of Sync-O-Matic.
+
+-  That the source code cannot be used to develop software which 
+competes with Sync-O-Matic
+
+- Any bug fixes and/or improvements will be shared with Charles 
+Severance so as to enhance future versions of Sync-O-Matic
+
+- The licensee agrees to protect any trade secrets contained in 
+the source code.
+
+-  The licensee agrees not to transfer the source code to any parties 
+outside their organization
+
+- This agreement will cover future versions of Sync-O-Matic unless
+Sync-O-Matic becomes a commercial product
+
+Name:
+Organization:
+E-Mail Address:
+Telephone number:
+Address:

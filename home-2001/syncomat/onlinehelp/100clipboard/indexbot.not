@@ -1,0 +1,7 @@
+This has shown how to take a ClipBoard-2000 lecture and convert it to a Sync-O-Matic lecture.
+<p>
+The wrinkle in the process is the fact that the Conversion from Quicktime to Real may have to be done on the Macintosh before the files are transferred to the Windows system.  While this documentation showed the attempt to use RealProducer on the PC before converting the files on the Mac, your typical process will simply convert the files on the Macintosh.
+<p>
+With this feature, you can produce both a Quicktime and Sync-O-Matic version of a lecture, giving your viewers maximum flexibility.  Some day, with a single recording, you will be able to give your viewers a web-lecture in nearly any format they are capable of handling.  For that to happen, each of the different publishing tools must accept a standard "lecture object" and automatically publish this object using server based techniques.
+<p>
+Ah, but that is the future.  For now, we do the best we can.

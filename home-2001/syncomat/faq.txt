@@ -1,0 +1,223 @@
+Frequently Asked Questions for Sync-O-Matic 2000
+
+Updated: 
+Apr 22, 2000
+
+> Why is this version called Sync-O-Matic-2000?  I have heard about Sync-O-Matic 3000.
+> Which is the newest verion?  Which is more cool?
+
+The short answer is that Sync-O-Matic was named incorrectly.  It was named as a joke.
+The idea was to nae it after the Saturday night Live Bass-O-Matic skit.  We thought
+the device in the skit was the Bass-O-Matic 3000 so we named the product the 
+Sync-O-Matic 3000.  Of course we did not anticipate the Year-2000 buzz and how
+everything from Microsoft Office on down would be named Blah-Blah-2000.  So, Sync-O-Matic 
+followed the trend into the new Century and was renamed Sync-O-Matic 2000.  Sorry
+for the confusion.
+
+Sync-O-Matic 3000 is harder to use, but for some people using it on a daily basis, 
+it has some features that are nice to use.  So far, both versions are pretty 
+compatible.  But at some point when maintenance gets too painful, the -3000 
+vesion will be frozen, an the -2000 product will diverge.
+
+> What hardware should I buy?
+
+See www.real.com for the video capture hardware
+I have tested and recommend (and like the following cards)
+      Osprey 100  (PCI $200)
+      BigPicture VideoPhone Camera and PCI Capture Card ($200) Camera
+        has nice color.
+      WinTV Hauppage (PCI $80)
+      NogaTech Video On The Go (PCMCIA $250)
+      Irez Kritter/SV - For a portable (PCMCIA $250)
+I have tested and do not recommend the following cards for direct video encoding
+      Osprey 1000
+      Miro DC30+
+      Any FireWire Card
+The problem is that these cards have hardware compression which is necessary for
+activities like non-linear editing of video, but very bad for RealEncoder direct
+encoding.  If you are planning a post production step in your video, then hardware
+compression cards are necessary, and Adobe Premiere can output the
+proper AVI in the proper format for you.  So choose the card based on its
+non-linear editing features, not its RealEncoder features.
+
+> I loaded netshow and it knocked out some of my Syn-O-Matic drivers....had
+> some wierd irq conflict...i think that the REAL technology is pretty solid
+> but as you mentioned can be "strange " at times...
+
+Had the same problem.  I think I have it working by uninstalling everything, then
+installing Netshow, then Installing RealPlayer.
+
+> Why do all the lectures have pictures of you?  Does that mean that
+> all my lectures have to have pictures of you in them?
+
+Make sure to replace the file \styles\sync2k\inst160.gif 
+with a picture of you rather than me!
+
+> Every time I try to make a screen shot of a browser showing a Sync-O-Matic lecture, 
+> my picture shows up pink or does not show up at all.
+
+Bring up RealPlayer.  Right click on the picture area and select preferences.
+Select the "Performance" tab.  Look for something like "use optimized
+hardware" "super-performance booster", or some such check box.  Un-check the box
+and then view the lecture.  At 160x120 10 frames per second, it is not really necessary
+a bunch of tricked out hardware techniques.  
+
+You can leave this unchecked forever with no negative consequences - unless 
+you start watching a bunch of 640x480 video at 1Mbps (which looks pretty bad 
+on Real anyways).
+
+> Are you running a server?  I like the idea because of bandwidth
+> negotiation.  Seems to be the only reason to run one, currently.
+
+Yes, we run a server.  I like the skip forward capability.  I also like the 
+fact that you can do 14.4 on a 28.8 and use the link for something else like 
+telnet.  I prefer pseudo-streaming for low-reliability links - I think that 
+TCP/IP and the ability to buffer minutes ahead rather than seconds ahead.
+In my opinion, the Real Streaming protocol is too optimistic in the face of an 
+unreliable connection.   
+
+> Hum.. I didn't realize that.. thanks for the tip.  I'm curious.. what you
+> you mean "unreliable"?  Do you mean "slow" or "dropping connections"? I
+> haven't experience "dropping connections."  Maybe someday soon connections
+> will be better.
+ 
+No, if you have a bad 28.8 connection, listening to 14.4 audio, streaming will 
+only get a few seconds ahead and then throttle back.  Then when you get a 
+short blip, you get a 7-10 sec pause while it resyncs.  If pseudo-streaming, 
+it tries to pull down the whole lecture to disk, hoping that it can 
+stay ahead.  After 10-15 seconds, the download is 20-30 seconds ahead 
+and every second you are downloading 3 more seconds worth of data.   
+So after a minute, you can tolerate lost packets for 2 mintues before 
+your play stops.  So, pseudostreaming "makes hay while the sun shines".
+
+Once streaming gets packets after an outage, it re-buffers but once it is 
+5-8 seconds ahead, it assumes the net will be perfect and throttles
+back.
+
+It assumes a unifomly distributed low error rate.  It there is a 3% chance of 
+and they will all be about the same length.  It is NOT designed for the 
+way things really work quite often - works perfectly for a long time then  
+Streaming could work much better if it had one buffer target size
+before it would restart and another larger buffer size before it
+throttled back.  i.e. get 60 seconds ahead before throttling back.    
+                                                                      
+> How do I unzip with PKUNZIP and the password?  (replace "dog" with the proper password)
+> From Monika Demspey
+
+c:\pkzip>pkunzip c:\sync -sdog -o c:\synctest.
+
+> For some reason it seems like the video plug-in us not available, but I
+> don't understand why.  What did I do wrong?  I hope I explained the  
+> problem clear enough and would really appreciate if you could give me a
+> hint on what I did wrong.
+ 
+This has to do with missing MIME-Types in the server configuration - the   
+following MIME type entries need to be added 
+ 
+MIME TYPE                     FILE SUFFIX
+audio/x-pn-realaudio          ra 
+audio/x-pn-realaudio-plugin   rpm 
+audio/x-pn-realaudio          ram
+audio/x-pn-realaudio-plugin   rm  
+
+Different servers need to be configured different ways.  Let your administrator know this.
+
+> I would like to incorporate the Syncomatic into a web based course when
+> at the end it calls an .asp which asks questions and stores answers in a
+> database.  I would be nice to call this .asp(s) at the end of the
+> PowerPoint.  
+
+You use the CTRL-K feature in PowerPoint to make an object (Box, Text, ClipArt)
+active and associate a URL with that Object.  PowerPoint makes that into
+an Image Map.  Sync-O-Mat saves the image map (and in version 1.7 fixes
+a stupid thing that PowerPoint does for relative references) and puts it
+into the resulting HTML.
+
+The student DOES have to push a button to make it work though.
+
+Here are some examples of URLS that you might put into the Hyperlink
+Field in Powerpoint
+
+http://www.syncomat.com/help/   (Absolute Reference)
+example01.htm                   (Relative reference)
+ 
+> I was just wondering if there were a reason that your Sync-O-Matic
+> generates absolute links, rather than using relative ones.  In other
+> words, all of the links in a file such as vn001.htm will often refer
+> to other slides within the lecture as
+>       http://www.vu.msu.edu/preview/cps230/cpsx/vn002.htm
+> rather than just
+>        vn002.htm
+> 
+> The reason that I ask is because we want to move our lectures out of
+> the original directory.  I've written a script that does mass recursive
+> replacement, so I could replace
+> "http://www.vu.msu.edu/preview/cps230/cpsx" with nothing, which would
+> allow us to move the lectures wherever we wanted.
+> 
+> I've already tried this on a lecture of two, and it works fine.  I
+> just thought I'd check to esure that there wasn't some special
+> Sync-O-Matic reason that absolute links were necessary.
+
+Believe me, if we could have made one version that could be moved from
+path to path or server to server, we would have done it in a heartbeat.
+It would make Sync-O-Matic about 30% easier.  Unfortuantely I was forced
+into absolute paths.
+
+In strange situations over time with different versions of
+browsers, relative links break.  It has to do with things like emdedded
+plug-ins versus active-X controls and combat zones between Microsoft and
+Real.  They all add up to the point that there is no commitment to keep
+relative links reliable.  
+
+Even if I made all the links relative in the .htm files, the embedded
+links in the .rm files (which you don't see) would keep you from moving
+from one directory to another.
+
+Another pitfall is that the slides that are being brought up end up being
+problematic if they are on a password protected site for all of the
+reasons that I mention above.
+
+The solution is for you to get Sync-O-Matic and the original course
+materials and "re-publish" the lectures with a new path name.  With 
+Sync-O-Mat is it a single button click and an upload.
+
+Now, interestingly because Sync-O-Mat is driven by "style" files, this
+convention of absolute links is ONLY embedded in the style files.  With a
+quick edit of the style files, you could have everything (except the
+events) relative.
+
+At some point if you were willing to tell folks that certain browsers
+just "didn't work" you might be able to make lectures with relative
+URLS.  For me, I erred on the conservative side and decided that if the
+SM-2000 lectures were IE4-Only it would turn off too many people.
+
+> 	After the upload process for the web server is completed, are all of
+> the required files supposed to be in one directory on the web server?
+> Specifically, are any other directories involved besides the main
+> directory?
+
+No, there are no other directories.
+ 
+> 	What is "pnm" and what is its purpose?
+
+If you run a streaming server, it uses urls pf the form pnm://blah.blah
+to access content using the "Progressive Networks Media" protocol.  Since G2,
+the rtsp protcol is preferred over the pnm protocol.
+
+> PRCT3260.OCX not correctly registered: file is missing or invalid.
+
+This generally means that RealProducer 7.0 has not been properly installed.
+
+> Can I get source code to Sync-O-Matic?
+
+The authors will begin to publish portions of the code over time, but 
+the whole program will probably not be published unless the author 
+decides to halt active support.  A source license is possible in the 
+mean time for a negotiated cost.
+
+> Can I use Sync-O-Matic in a commercial venture?
+
+Yes, you can use the product commercially and the materials produced 
+by Sync-O-matic are yours and require no royalty - after all they are 
+just web pages.  You just cannot sell Sync-O-Matic.

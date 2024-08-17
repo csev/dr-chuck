@@ -1,0 +1,36 @@
+Sync-O-Matic Newsletter-24
+Tue May 16 13:15:01 EDT 2000
+
+Alpha Version 4 of Sync-O-Matic 2000 is now out.  This is the first release which
+does NOT have a corresponding Sync-O-Matic 3000 release.  The code has diverged.  
+But the good news is that while -2000 is off on its own, I got enough feedback from 
+existing users to convince me to retain some of the -3000 interface (updated to be
+consistent with -2000).  The -3000 look still lives under the "More Detail" option.
+But now the two views are both working from the same set of preferences and have the
+same naming conventions.
+
+For heavy users of -3000, there are some preference settings (See ${lecparent}) which
+allow you to simulate the old directory layout.  Let me know if you need help
+setting preferences.  In a while I will write some documentation on how to set 
+preferences.
+
+I removed the "Advanced Mode" of -2000, moving it into the "More Details" option.
+
+With a lot of little changes, the on-line documentation is mildly out of date and 
+the new "More Details" stuff is undocumented :(.  But existing -3000 users will 
+feel pretty much at home.  Lecture name and class name are gone.  They are now just a 
+path.  The lecture name is derived from the last directory in the path.  It is shown
+in this version just for debug.
+
+This version is also now officially NAGWARE!  No password is necessary to download 
+it and install it.  It starts working (and nagging) right away.  Stopping the nagging
+is oh-so-easy.  Go to registration in preferences and enter (yes, you guessed it)
+"bob" (no quotes).  Hey I am even asking for a shareware-style registration for new
+users, but people can use it forever without ever giving me a cent - the best software 
+is free software...
+
+TTFN.
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/syncomat/      

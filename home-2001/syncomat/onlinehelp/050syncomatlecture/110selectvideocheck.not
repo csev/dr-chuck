@@ -1,0 +1,8 @@
+<!-- file:110selectvideocheck-->
+This screen is essentially the RealProducer as built-into Syncomat.  Many of the buttons and controls are similar to RealProducer.  This is the point, where your testing of RealProducer, video and audio will pay off.  If your video or audio is improperly configured Syncomat cannot compensate at this screen.
+
+If you have too much trouble with this screen, exit Syncomat and try to debug the audio and video using RealProducer and even the Sound Recorder application included with Windows.
+
+First, check the bandwidth you want and whether or not you want video.  If you select video, additional controls will appear in the dialog.
+
+For this tutorial, we use video, so enable the checkbox.

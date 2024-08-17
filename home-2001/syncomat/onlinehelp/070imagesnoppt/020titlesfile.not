@@ -1,0 +1,7 @@
+<!-- file:020titlesfile-->
+You can optionally create a file called <b>titles.txt</b> to indicate the "title" for each image used in the on-line lecture index for jumping randomly around the lecture.
+<p>
+This file is <i>not</i> required and if present, it does not need to have a line for every image.  It can have lines for images not used in this lecture.
+<p>
+The double quotes around the image file name and the title are required. lines with '#' in
+the first column are comments as are blank lines.

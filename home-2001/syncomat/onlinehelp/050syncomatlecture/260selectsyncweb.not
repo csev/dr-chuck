@@ -1,0 +1,4 @@
+<!-- file:270selectsyncweb-->
+The files will be stored in the local directory on the hard disk for uploading to the web.  The convention in general is to create a subdirectory called <b>syncweb</b> within the lecture directory.
+
+It is possible to store this material in any directory.  It is even possible to use a network mounted drive to put the files directly on the server as part of the publish process.  The default convention is determined in <b>Option | Preferences</b>.

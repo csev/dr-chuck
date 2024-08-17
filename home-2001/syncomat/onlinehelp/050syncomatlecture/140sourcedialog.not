@@ -1,0 +1,3 @@
+<!-- file:140sourcedialog-->
+<b>Video Source</b> generally deals with adjustments available on the camera and if the capture hardware has multiple sources (S-Video or composite) you can select them here.  Often if you see an all-blue or all-black screen and you are using a video capture card (not a camera) the 
+problem is with the source.

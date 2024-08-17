@@ -1,0 +1,56 @@
+<h1>Changes in This version</h1>
+Sync-O-Matic 2000 Version Beta-4 
+<p>
+This version adds a whole bunch of features - and is more like an Alpha test for those new features.  So, if you experience
+problems with this release,  you might want to try Beta-3.  There is one new "non-server" feature in this release - 
+It automatically can "parse" a previously published lecture and extract a limited amout of the information from the lecture
+to allow republishing in case the original materials were lost.
+<ul>
+<li>
+The events information is extracted from the *.rat files and converted into the original "*.txt" format.
+<li>
+The "Slide Index" titles are extracted from the first navigation file (n001.htm, an001.htm, or vn001.htm) and placed in "titles.txt"
+<li>
+It turns out that the RealProducer ActiveX control deletes the "events" track when adding a new track - so there was no need to remove the events
+track.  This does mean that lectures get turned into RealPlayer 8 (YUCK!) or higher when you redo them.  If you want to use Real 5, everything works, 
+but you must extract the events tracks by hand.  You must use the rmtools to perform this :(.
+</ul>
+<h2>Server Edition</h2>
+<p>
+This is intended to allow you to upload an unpublished lecture to a repository and have it auto-published on the server, while making an archival 
+(repository) copy of the lecture.  The idea is to not do the "Make Lecture" process on the client and upload the files.  The new Sync-O-Matic 3000
+interface has had this "mysterious" upload to repository feature - that will upload a lecture to a repository, but you still have to rename it, as described below.
+After the server side stuff is is a little more solid, I can put the rename in automatically.
+<p>
+Documentation is still to be written on the Server Edition - but this page will be a "core-dump" of its features
+<ul>
+<li>In the advanced mode, you can switch to server mode.
+<li>There are also new preferences for server mode
+<li>Also in the "Advanced" preferences, if you put "Server" in the Yes/No field the program will come up in server mode directly.  In a future release it will trigger 
+"auto" as well to allow a fully-lights-out operation.  Assuming that it works of course :)
+<li>If you don't want streaming, just leave it blank in the preferences
+<li>Generally, even with all of the buttons, it is intended to work in "auto" mode all of the time.  The buttons are really for testing 
+more than production use.
+</ul>
+In auto mode, the program scans the "Incoming directory" hierarchy, looking for recently uploaded unpublished lectures.  
+Sync-O-Mat identifies completed incoming lecture directories because these lectures have an "x-" prefix prepended to their name.  
+The "x-" is necessary because Sync-O-Mat needs to leave directories
+alone until the upload is complete - at the end of the upload, the user renames the directory from "food" to "x-food" and within 10 
+seconds, the server process should kick in.
+<p>
+Once a directory is found, it is moved into the "repository" hierarchy and the "x-" is removed.  Then Sync-O-Matic
+is run to publish a web-version of the lecture to the designated location.
+<p>
+There is a log file (often in web space) used to keep track of the publication process.
+<p>
+The server process uses a slightly different naming convention for its paths and URLs.  
+Within the incoming directory, you can just put in a bunch of lectures - or you can make a whole hierarchy for
+different classes/organizations, etc - The server edition will maintain the relative paths from incoming through the repository
+and to the web.
+<p>
+As I said above, this is the first release of the Server Edition stuff and so it will (as always) need a bit of tweaking as it gets deployed
+in places other than the Dr. Chuck testing lab.
+<p>
+/Chuck
+<p>
+Dec 31, 2000

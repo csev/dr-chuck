@@ -1,0 +1,29 @@
+Mon Feb  8 21:05:35 EST 1999
+
+Sync-O-Matic 3000 Newsletter: Number 11
+
+I have started working on the next major revision to Sync-O-Matic.  I 
+might call this one 2.0 :).
+
+One of my goals is to take advantage of the new RealPlayer G2 features.
+Another goal is that you don't have to do anything special for the G2
+lectures.  So far, it seems that I can do it all in style files so you
+will be able to reuse all of your audio and video material and republish
+them to make new G2 versions of the same stuff.  Another anticipated 
+benefit of G2 is that lectures will be portable from server to server
+(i.e. no hardcoded URLS, all references are relative).
+
+This is what I have so far:
+
+http://www.vu.msu.edu/preview/egr124/lectures/filmg2/filmg2.zip
+
+Download into a temp directory and unzip - open index.htm and follow
+directions.   Needs work - I have to still figure out if such a
+presentation can be pseudo-streamed of if the G2 server is required.
+
+Anyone with G2 skills that can show me how to alter the above
+presentation for pseudo-streaming, I would appreciate it.
+
+/Chuck
+crs@msu.edu
+http://www.egr.msu.edu/~crs/projects/syncomat/

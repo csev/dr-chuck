@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+<!-- Here comes some code
+function gotovideo(NNN) {
+  if ( top.window == self.window ) {
+    parent.window.location = "r" + NNN + ".ram";
+  } else {
+    parent.window.location = "f" + NNN + ".htm";
+  }
+}
+function gotoaudio(NNN) {
+  if ( top.window == self.window ) {
+    parent.window.location = "r" + NNN + ".ram";
+  } else {
+    parent.window.location = "f" + NNN + ".htm";
+  }
+}
+
+// -->
+</SCRIPT>  
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for Microsoft PowerPoint 97">
+ <TITLE>PPT Slide</TITLE> 
+</HEAD>
+<body bgcolor="#FFFFFF">
+<CENTER>
+<IMG src=img035.gif
+     alt="Slide number 035" border=0 usemap="#Objmap">
+<font size=-1>
+<FORM>
+<INPUT TYPE="Button"  Value="First" onClick="window.location='sld001.htm';">
+<INPUT TYPE="Button"  Value="Back" onClick="window.location='sld034.htm';">
+<INPUT TYPE="Button"  Value="Next" onClick="window.location='sld036.htm';">
+<INPUT TYPE="Button"  Value="Slide Video" onClick="gotovideo('035')">
+</FORM>
+</font>
+</CENTER>
+<BR>
+
+Each system which uses the Domain Name System consults a pre-configured Domain Name Server to “revolve” its domain name addresses into IP addresses.  For most dial-up connections, the Domain Name Server is set automatically.  To tace a request, assume that a user on scully.msu.edu connects to www.holt.k12.mi.us (rewmember that the http:// indicates how to connect and the <a href=http://www.holt.k12.mi.us>www.holt.k12.mi.us</a> indicates where to connect)
+<BR></UL><UL>
+(1) Scully consults its configured domain name server (35.9.37.10). The domain name server for egr.msu.edu checks its local  table 
+</UL><UL>
+(2) and does not find <a href=http://www.holt.k12.mi.us>www.holt.k12.mi.us</a> - it has a list of the top-level domain name servers, so it contacts the top-level domain name server for .us 
+</UL><UL>
+(3).  The .us server returns the address of mi.us to the egr server which then contacts the mi.us server 
+</UL><UL>
+(4).  The mi.us server returns the address of the k12.mi.us server 
+</UL><UL>
+(5).  This continues until the domain name server for holt.k12.mi.us consults it table 
+</UL><UL>
+(6) to find the actual IP address of <a href=http://www.holt.k12.mi.us>www.holt.k12.mi.us</a> and returns it to the egr server (7).  
+</UL><UL>
+Finally (8) the egr server returns the IP address to scully.msu.edu which then makes a direct IP connection (9) to the <a href=http://www.holt.k12.mi.us using its IP address (204.38.68.2).>www.holt.k12.mi.us using its IP address (204.38.68.2).</a></UL> </P> 
+
+<p>
+</HTML>

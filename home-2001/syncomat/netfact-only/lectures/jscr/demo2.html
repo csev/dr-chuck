@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE>User Interaction Demo</TITLE>
+<SCRIPT LANGUAGE= "JavaScript">
+<!-- begin hiding from older browsers
+	
+	// This function takes appropriate action based on the user input.
+	// The function is named "Act()" and it has two variables: "Text",
+	// which is the text entered by the user, and "ind" which is the 
+	// index of the choice the user selects in the display type box.
+	
+	function Act(){
+		var Text = document.exampleForm.userText.value;
+		var ind = document.exampleForm.pickList.selectedIndex;
+	
+	// depending on the user's choice, the program calls a function to 
+	// display the text the user entered in a message box, another 
+	// browser window, or in the status bar at the bottom of the browser
+		
+		if( ind == 0 ) return;
+		else if ( ind == 1 ) showMessageBox( Text );
+		else if ( ind == 2 ) showWindow( Text );
+		else if ( ind == 3 ) showStatusBar( Text );
+		
+		document.exampleForm.pickList.selectedIndex = 0;
+	}
+	
+	// This function (called showMessageBox) displays the user's text in
+	// an alert message box
+	
+	function showMessageBox( Text ){
+		var CRLF = "\r\n";
+		alert("You entered: " + CRLF + CRLF + Text );
+	}
+	
+	// This function (called showWindow) displays the user's text in
+	// a separate browser window
+
+	function showWindow( Text ){
+		newWindow = window.open("", "", "toolbar,menubar,scrollbars,resizable,height=300,width=400");
+		newWindow.document.open();
+		newWindow.document.write( Text );
+		newWindow.document.close();
+	}
+	
+	// This function (called showStatusBar) displays the user's text in
+	// the browser's status bar
+	
+	function showStatusBar( Text ){
+		window.status = Text;
+	}
+	
+	// This function (called goToURL) loads the page specified in the URL below when the
+	// "Go To URL" button is pushed
+		
+	function goToURL(){
+                parent.location = "vf027.htm"
+	}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="lightgreen" TEXT="black">
+<H3>Welcome!</H3>
+<P>This is an example of how JavaScript can be used interactively.
+Type a brief message in the box below and then select one of the display options from 
+the pull-down list.  Depending on your choice, your text will be displayed in an alert 
+box, a second browser window, or in the status bar at the bottom of the page.
+<P>When you have tried all of the display options, go to the menu bar at the top of the
+browser and look at the source file for this page.  In Netscape, select "View" and then 
+"Page Source".  In Internet Explorer, select "View" and "Source".  This will allow you 
+to view the JavaScript code that created this page.  When you are done looking at the 
+source code, click on the "Go To URL" button to return to the lecture.
+
+<FORM NAME="exampleForm">
+	<I>Enter Text Here: </I><BR>
+	<INPUT TYPE="text" NAME="userText">
+	<BR>
+	<BR>
+	<I>Select Display Option:</I><BR>
+	<SELECT NAME="pickList" SIZE=1 onChange="Act()">
+	<OPTION VALUE="">(Select One)
+	<OPTION VALUE="">Message Box
+	<OPTION VALUE="">Window
+	<OPTION VALUE="">Status Bar
+	</SELECT>
+	<BR>
+	<BR>
+        <INPUT TYPE="Button"  Value="Resume Lecture" onClick="goToURL()">
+</FORM>
+<!-- The answer to your quiz question is "onion" -->
+</BODY>
+</HTML>
+

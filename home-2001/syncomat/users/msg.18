@@ -1,0 +1,44 @@
+Sync-O-Matic Newsletter-19
+Fri Mar 31 01:58:52 EST 2000
+
+Howdy folks.  Sync-O-Matic version 1.12 is now up and available.  
+It is the largest rewrite of the software for several years and 
+implements much of the technology I have developed for the 
+"super-streamlined" Sync-O-Matic version 2.0.
+
+With this many new features, I am expecting a few weeks of 
+"shakedown" early in April.  There may be a couple of quick 
+bug-fix releases as users get their hands on it.  I
+expect to be able to respond quickly to errors to get to 
+a stable release as soon  as possible.  For a few weeks it is 
+a good to think of this as a "beta".  Keep a copy
+of version 1.11 (solid as a rock - and just as much fun) 
+so you can go back and forth (uninstall/reinstall) if 
+you encounter problems.
+
+Most of the changes fall into the reliability/ease of 
+use area.  A detailed list of new features is available on the web site 
+
+http://www.netfact.com/crs/projects/syncomat/install/
+
+Here is a short summary:
+
+- A mode where the media and PowerPoint Output are in 
+  the same directory
+- The ability to publish from ClipBoard-2000 (my other 
+  product) media into Real
+- Integration of the RealProducer into ClipBoard-2000.  
+- Error checking and cleanup of the Make Lecture Process
+- Removal of the ".rm is audio" box - this detection 
+  is now done automatically
+
+I hope that some more experienced users will download and test 
+the software and get me some quick feedback.
+
+Now that this is out, I can focus my attention on the next 
+major release (Version 2.0).
+
+/Chuck
+csev@umich.edu
+http://www-personal.umich.edu/~csev/projects/cb2k/
+http://www.netfact.com/crs/projects/syncomat/      

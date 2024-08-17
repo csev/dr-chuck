@@ -1,0 +1,67 @@
+<h1>Changes in This version</h1>
+Sync-O-Matic 2000 Version Alpha-5
+<p>
+Much of the work of this release was done in airports and airplanes on May 23, 2000 and during the <a href=http://www.cpmt.org/ target=_new>ECTC/CPMT</a> conference sessions May 25, 2000.
+<p>
+The sessions were quite interesting, but there is a reason that I am not an Electrical Engineer.  I tried to do that stuff several decades ago and quit while I was ahead. But I am glad that there are Electrical Engineers.
+<p>
+This release is really was the beginning of what I hope to be a series of cleanup releases where I fix user encountered bugs and remove some of the old code that I have been maintaining to allow both -3000 and -2000 to work unchanged together.
+<p>
+It felt really good to spend some time just poring over the code, cleaning and clarifying things.  In the list below, I separate the cleaning activities and the bugs/features.
+<p>
+Bugs/Features:
+<ul>
+<li>If the preference for the FTP upload host is left blank, then the host name is taken from the URL for the lecture (kind of obvious).
+<li>A bug has been encountered where PPT-2000 behaves strangely complaining about a frame
+not existing and not allowing the import.  I spent about 5 hours on this one, using VB5 and VB6 and have concluded that a simple 4-line (2 lines of code) example directly from the MS documentation does not work.  But the workaround is to start and minimize PowerPoint before attempting any PPT operations inside Sync-O-Matic.  I added a cute little message to that affect to remind people until I figure out the magic trick to make things work.
+<li>
+So many people get the PRCT3260 message (because RealProducer is not installed) that I added a pop-up notification that checks to see if the FILE exists on disk in the standard install location and notifies you of a potential problem if the file does not exist.  The pop-up goes away completely once the software is registered.
+<li>I added the ability to import from rawmedia.avi in addition to rawmedia.mov as the PC version of Cliboard-2000 starts to come out.  But the earliest version of ClipBoard-2000 chooses a strange audio rate which makes RealProducer crazy.  SO that will have to be fixed in ClipBoard.
+<li>
+(Thanks to Joy) I really tested the living heck out of FlipIT (more Detail) and now I think it works.  I thought it worked but too many nested tests left my media directory full of all sorts of good stuff, so anything I tried worked.  There was actually a real problem which I fixed.  
+<li>
+I added some cool "Easter-Egg" like things when you use the "special registration codes" (You know who you are) :)
+<li>
+I added several new strings to the style file to allow a style to adapt to video of different sizes.  (this was during a session)
+<ul>
+<li>H#V - Height of video - will be 0 for audio - Should only be used inside !IFDEF VIDEO
+<li>W#V - Width of video - ditto
+<li>W#C - Width of Control - Width of Video or 160 whichever is greater - used to control the width of the scrollbar
+<li>W#F - Width of frame - 30 more than W#C - used to size the frame
+</ul>
+It would be nice if a general purpose calculation could replace the above values 
+but that will take a while and I want to see how it would be used in a few instances before I build it.
+<li>
+I updated the standard style "sy2k" to use these values - it was pretty cool.  It worked with video from 80x60 up to 320x240..  :)
+<li>
+In a recent release I had started using the ClipBoard-2000 style events file called images.txt for Sync-O-Mat recordings.  Unfortunately this means that TimeIT could not edit these files produced by Sync-O-Mat.  So I went back to using rawmedia.txt - except when liberal naming is used.
+<li>
+I added the ability to play media instead of recording media or simply doing neither record nor play - it is done in FlipIT! with a new radio selector.  Thanks to Joy and Furio for making sure that I did not forget about this feature.
+</ul>
+Cleanup - don't worry if these sound silly - they are just notes
+<ul>
+<li>
+Cleaned up the code which determines which UI started first - Form_Unload
+<li>
+Commented out the recent files stuff
+<li>
+Removed any reference to chk2000, deleting the old -3000 versions of the code
+<li>
+Completely removed the old -3000 preferences, moving the one last vestige to the -2000
+prefs.
+<li>
+Removed PAGEGIF3 and fixed PAGEGIF2 to be right.
+<li>
+Deleted a bunch of old code files from the project - just plain discarded them.
+</ul>
+<p>
+This release is a little bit of new features, but it is starting to feel like things are settling down (Again).  I will wait a while longer before I update the documentation again
+in case I get a bunch of user feedback that necessitates a change.
+<h3>To Do</h3>
+This release is (still) closing in on the Beta-1 version - but since there was so much new development, things need to calm down again.
+<ul>
+<li>Add a way to access registration info in a style
+<li>More styles - the Andrew styles and the SMIL style
+<li>Testing testing testing
+<li> Way out: Add AVI capture, Think about Sync-O-Matic-1000 :)
+</ul>

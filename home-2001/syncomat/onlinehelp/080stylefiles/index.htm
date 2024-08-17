@@ -1,0 +1,179 @@
+<title>Style Files</title>
+<h2>Sync-O-Matic Style Files</h2>
+This is some initial documentation on style files.  It needs work, I
+know.
+<p>
+The style files are stored in directories of the form
+{Application Directory}\style\sync2k.
+This is an example directory listing of the standard style directory:
+<pre>
+F000     HTM           585  09-25-98  4:47p
+N000     HTM         1,783  01-15-99  3:04p
+R000     RAM            48  09-25-98  4:47p
+R000     RPM           105  09-25-98  4:47p
+STR0     RAM            36  09-25-98  4:47p
+THUMB    HTM           347  09-25-98  4:47p
+CACHE    HTM           277  09-25-98  4:47p
+INDEX    HTM         2,287  12-07-98  3:47p
+PROBLEMS HTM         1,896  09-25-98  4:47p
+SLD000   HTM         1,337  01-13-99  4:08p
+</pre>
+Sync-O-Mat following these steps to produce a lecture:
+<ul>
+<li>Read the PowerPoint output directory and parse several of the files
+<li>Read the media directory looking for the type and number of media
+files (rawmedia.rm) and the timing information (syncomat.txt).
+<li>Go through the style directory, making copies of each file in the
+style directory one or more times in the synccd or syncweb directory.
+During this phase, there is a bunch of processing that happens to each
+file.
+<li>Run a file called PROCESS.BAT to perform some tasks in MS-DOS
+</ul>
+The names of the files in the style directory determine how each file is
+treated.
+<ul>
+<li>If a file has three zeros (sld000.htm) in the name, 
+then one copy of the file
+is produced in the destination for each slide in the initial
+presentation.  The file names in the destination directory are given
+numbers 001 002 003 ... corresponding to the slide number.
+<li>If a file has one zero (str0.htm) in the name, 
+then one copy of the file is
+produced for each part in the initial lecture with the zero replaced
+with the corresponding part number 1, 2, ...  (Note: in Sync-O-Mat-2000
+multipart lectures are deprecated)
+<li>If a file has no zeros in the name (index.htm) then a single copy of
+the file is placed into the destination directory after the string
+processing is done.
+<li>.gif and .jpg files are copied into the destination directory without conversion.
+</ul>
+The contents of the file are HTML or other text material (such as RPM).
+Sync-O-Mat does not really care at all about the contents - it is a
+string processor when looking at the files.
+<h2>Contents of a style file</h2>
+There are three basic things that you will see in a style file:
+<ul>
+<li>String substitution values (P#P, N#N, N+N)
+<li>Control structures (!FORPART !IFDEF)
+<li>Include areas (!MAP !NOTES)
+</ul>
+<p>
+We will provide basic documentation for each.
+<h2>String Values</h2>
+<TABLE BORDER=2>
+<TR><TD COLSPAN=2 ALIGN=CENTER>String Values - For Each Slide</TR>
+<TR><TD>N*N<TD>Lecture name</TR>
+<TR><TD>N#N<TD>Slide Number formatted as three digits - 001</TR>
+<TR><TD>N-N<TD>Previous slide number.  At slide 1 this is 001</TR>
+<TR><TD>N+N<TD>Next slide number.  At the last slide this is the last slide</TR>
+<TR><TD>n#n, n+n, n-n<TD>Same as above except the numbers are not three digit.</TR>
+<TR><TD>S#S, S+S, S-S<TD>Slide name - sld001</TR>
+<TR><TD>X#X, X+X, X-X<TD>Slide start time offset from the beginning
+of the current media file</TR>
+<TR><TD>X*X<TD>Duration of this lecture segment.</TR>
+<TR><TD>P#P, P+P, P-P<TD>Current part number of the lecture</TR>
+<TR><TD>T#T<TD>Current slide title from PowerPoint</TR>
+<TR><TD>I#I<TD>The current complete image name - May not be imgnnn.gif</TR>
+</TABLE>
+<h2>Control Structures</h2>
+<TABLE BORDER=2>
+<TR><TD COLSPAN=2 ALIGN=CENTER>Control Structures</TR>
+<TR><TD>!FORPART ... !ENDPART<td> 
+Text between FORPART and ENDPART is repeatedly processed for each
+lecture part.  The variable P#P is incremented each time the text is
+generated.  All lectures have at least one part.
+The N#N and all slide related variables are set to the value for the 
+first slide in the lecture part.  <br>
+(Deprecated in Sync-O-Matic 2000)
+</td> </TR>
+<TR><TD>!FORSLIDE ... !ENDSLIDE<td> 
+Text between FORSLIDE and ENDSLIDE is repeatedly processed for each
+slide in the presentation.  The variable N#N  and all the other string
+variables such as T#T correspond to the slide as well.
+<p>
+When a FORSLIDE is embedded within a FORPART, it generates for those
+slides <i> within </i> the part of the lecture being processed.
+</td></tr>
+<TR><TD>!IFDEF ... !ENDIF<td> 
+This is conditionally generated code.  There is also a !ELSE.  These can
+be nested.  The conditional expressions are very SIMPLE - they are a
+list of TRUE/FALSE values listed in the following table.
+</td></tr>
+</TABLE>
+<h3>IFDEF Values</h3>
+These are the values which can be used on !IFDEF commands.  They are a
+little strange because of several reasons.
+<ul>
+<li> Originally, you could not nest !IFDEFS and there was no !ELSE
+capability
+<li> There is no mechanism for logical combination in !IFDEF
+</ul>
+Ultimately it would not be much work to allow simple logical
+combinations to simplify these.  
+These values change from slide to slide and from lecture part to lecture
+part.  For example generating sld010.htm, AUDIO means, 
+"Is there audio associated with slide 10".  Generating index.htm,
+AUDIO means, "is there any audio in this lecture".  Similarly in a
+FORSLIDE, the value for AUDIO changes as the loop processes each slide.
+<TABLE BORDER=2>
+<TR><TD COLSPAN=2 ALIGN=CENTER>IFDEF Values</TR>
+<TR><TD>AUDIO<TD>Is true if audio is present</TR>
+<TR><TD>AUDIOONLY<TD>If true if there is NOLY audio present</TR>
+<TR><TD>VIDEO<TD>Is true if video is present</TR>
+<TR><TD>VIDEOONLY<TD> Is true if there is ONLY video present</TR>
+<TR><TD>AUDIOANDVIDEO<TD>Is true if both audio and video exist</TR>
+<TR><TD>CDROM<TD>Is true is we are creating a CD-ROM version of the lecture</TR>
+<TR><TD>WEB<TD>Is true if we are generating a Web version of the lecture</TR>
+<TR><TD>PSEUDOSTREAM<TD>Is true if the user has NOT checked the "Stream" checkbox</TR>
+<TR><TD>STREAM<TD>Is true if the use checks the stream checkbox - generally when this is enabled, pseudo-streaming is also available (they obviously have http: 
+capability) so you may want to generate both streaming and pseudo-streaming
+files and give the user a choice.  In the standard style, the <b>problems.htm</b>
+file gives the user a choice to switch to pseudo-streaming even when streaming
+is checked and is used as the primary delivery mechanism.</TR>
+</TABLE>
+CDROM and WEB are mutually exclusive as are STREAM and PSEUDOSTREAM.
+<h2>PowerPoint Includes</h2>
+Sync-O-Matic parses the PowerPoint materials and extracts information
+about each slide.  This information can be copied into your new files
+using these commands.  These only work when there is a file of exactly
+the same name in the PowerPoint file and the style file.  The only files
+that use these are the sld000.htm and tsld000.htm files or the img001.not
+files as noted below.
+<TABLE BORDER=2>
+<TR><TD COLSPAN=2 ALIGN=CENTER>Included Materials From PowerPoint</TR>
+<TR><TD>!MAP<td>Includes any image map information from the slide</TR>
+<TR><TD>!HEAD<td>Includes all the material between HEAD and /HEAD</TR>
+<TR><TD>!NOTES<td>Includes all the notes materials.  If the sldnnn.htm file 
+does <b>not</b> exist, Sync-O-Matic looks for a file of the form imgnnn.not
+and includes its entire contents as notes.  The naming is based on removing the suffix
+from the image file name, and adding ".not", so this can be used with arbitrarily named
+image files.</TR>
+<TR><TD>!RTNOTES<td>Includes all the notes materials, stripping all the
+HTML except paragraph tags.  This intended to produce good "RealText"
+material from PowerPoint notes.</TR>
+<TR><TD>!INCLUDE<td>Includes the whole slide.  The only use for this is
+the tsld000.htm file</TR>
+</TABLE>
+
+<h2>Future plans</h2>
+Currently, the PROCESS.BAT file is generated in the code of
+Sync-O-Matic.  In future releases, I intend to make the PROCESS.BAT file
+another style file.  These strings are primarily intended for use 
+in the PROCESS.BAT or other batch files.
+<p>
+To completely replace the PROCESS.BAT, I will need more than these
+strings and a more flexible configuration capability.
+<TABLE BORDER=2>
+<TR><TD COLSPAN=2 ALIGN=CENTER>String Values - For PROCESS.BAT</TR>
+<TR><TD>S*P<TD>PowerPoint Directory</TR>
+<TR><TD>S*M<TD>Media Directory</TR>
+<TR><TD>F*M<TD>Media File Name (includes path and drive).  This changes for each media file
+in a !FORPART.  Outside of a !FORPART, it is the first (usually only) Media File.  Useful to copy the media files ino the destination directory.</TD>
+<TR><TD>S*C<TD>Copy Directory</TR>
+<TR><TD>S*S<TD>Style Directory</TR>
+<TR><TD>D*C<TD>Destination CDROM Directory (including drive letter)</TR>
+<TR><TD>L*C<TD>Destination CDROM Drive Letter (i.e. C: )</TR>
+<TR><TD>D*W<TD>Destination Web Directory (including drive letter)</TR>
+<TR><TD>L*W<TD>Destination Wed Drive Letter</TR>
+</TABLE>
+

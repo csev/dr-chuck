@@ -1,0 +1,6 @@
+<!-- file:010startuppressnew-->
+The main screen for Syncomat is a series of buttons which are enabled based on what you can possibly do next.
+
+In this screen, the only buttons are <b>New Lecture</b> and <b>Open Lecture</b>.  The menu options <b>File | New Lecture</b> and <b>File | Open Lecture</b> do the same thing as these buttons.  In general, there is a menu option which corresponds to each button.  The menu options are enabled and disabled as you perform various tasks.
+
+So, to continue with this tutorial, press <b>New Lecture</b>.

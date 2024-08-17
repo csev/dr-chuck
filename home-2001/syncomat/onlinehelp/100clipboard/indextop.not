@@ -1,0 +1,14 @@
+<h3>Importing ClipBoard-2000 Lectures into Sync-O-Matic-2000</h3>
+One of the ultimate goals is to work towards a web-lecture interchange format which is a standard.  With a standard, lectures could be moved from one publishing environment to another.  As an exercise in this effort, Sync-O-Matic is capable of importing lectures from
+<a href=http://www-personal.umich.edu/~csev/projects/ck2k/>ClipBoard-2000</a>.
+<p>
+ClipBoard-2000 is a Quicktime based system which records its media in Quicktime and 
+produces Quicktime based lectures for web-delivery.  RealProducer is capable of
+encoding from Quicktime into Real, so it is possible that these lectures can be
+imported into Sync-O-Matic for publishing.
+<p>
+Sync-O-Matic and ClipBoard use the same format for image files and recording the timings of when each image file is to be shown within a lecture so the only problem is to convert the Quicktime file (rawmedia.mov) into a Real file (rawmedia.rm).
+<p>
+This conversion facility is built-into Sync-O-Matic, but unfortunately the Windows RealProducer cannot read very many different Quicktime formats.  Fortunately, the RealProducer on the Macintosh can handle the files just fine.  This is interesting because the Quicktime player on Windows is quite capable of playing the Quicktime files under Windows.
+<p>
+Before you start, it is important to make sure that you have the latest version of Quicktime and RealProducer installed both on the PC and Macintosh systems you will be using.

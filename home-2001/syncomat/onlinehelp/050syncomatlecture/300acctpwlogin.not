@@ -1,0 +1,4 @@
+<!-- file:300acctpwlogin-->
+This dialog is the automated upload process for Syncomat.  it essentially does an <b>MPUT</b> to the directory you select on the server.
+
+First, enter the host, account, and password, and press <b>Login</b> and you will be logged into the server.

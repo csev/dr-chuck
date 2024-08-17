@@ -1,0 +1,8 @@
+<!-- file:100inputmediaoutputfile-->
+Our first goal is to test the RealProducer.  Because Syncomat deals directly with RealProducer using a programmatic interface (ActiveX), you may never have to run RealProducer separately.
+
+But if you cannot record video and audio using RealProducer, you most likely will not be able to record using Syncomat.
+
+Select the input from the audio and video media and give an output file such as <b>C:\temp\temp.rm</b>. 
+
+Then press <b>OK</b>.

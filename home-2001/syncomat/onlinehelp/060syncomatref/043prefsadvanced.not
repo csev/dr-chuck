@@ -1,0 +1,11 @@
+<!-- file:043prefsadvanced-->
+This screen allows you to configure the behavior of the 
+<b>More Details</b> (aka PowerUser interface) for Sync-O-Matic.  This interface
+is similar to the original Sync-O-Matic user interface.  The interface is a little busy, but is preferred by users with more experience.
+
+You can indicate that you want the advanced interface to be the default interface.
+
+Also, you can configure the naming convention for the additional fields which appear in the advanced mode.
+
+The advanced mode screen is described in more detail
+<a href=../110moredetail/index.htm>in a separate chapter</a>.

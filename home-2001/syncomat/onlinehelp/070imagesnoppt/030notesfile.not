@@ -1,0 +1,5 @@
+<!-- file:030notesfile-->
+Also optional is a file which contains the "notes" for the slide.  This is similar to using the notes area in PowerPoint.  The naming convention for the <b>.not</b> files is to use the identical name as the image file with the .not suffix.
+<p>
+The notes files are simple HTML, you can put in hrefs or other HTML stuff like
+<a href=http://www.netfact.com/syncomat>this</a>.

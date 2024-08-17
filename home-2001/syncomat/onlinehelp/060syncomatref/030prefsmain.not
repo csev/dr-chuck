@@ -1,0 +1,25 @@
+<!-- file:030prefsmain-->
+The preferences are divided into sections.  This is the <b>Main Settings</b> screen.
+
+The most recent lecture is stored in the preferences.
+
+The paths for the hard disk and web publish steps can be configured.  The strings <b>${lecname}</b>, <b>${lecparent}</b>, and <b>${lecdir}</b> can be used to put the current lecture name and directory into these strings.  
+
+The goal of these preferences and replacement strings in the preferences is for you to be able to configure your naming convention any way you like.  For example, if you had the web space mounted on a drive, you might want to make the web publish directory to be something like <b>H:\mount1\crs\lectures\${lecname}\</b> or something similar.
+<br clear=all>
+
+The following is an example:
+
+<pre>
+String          Value
+------          ------
+${lecdir}       C:\My Documents\lectures\test\
+${lecparent}    C:\My Documents\lectures\
+${lecname}      test
+</pre>
+
+The default style path is also put in here.
+
+The default web location for lectures is also set here.
+
+In general, leave the preferences set to their default values on this screen unless you have a good reason to change them.
